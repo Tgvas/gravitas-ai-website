@@ -1,6 +1,11 @@
 import type { Metadata } from 'next';
 import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/ui/AnimatedSection';
 import { baseMetadata } from '@/lib/metadata';
+import { AgentNetworkIllustration } from '@/components/illustrations/AgentNetworkIllustration';
+import { RadarAnalysisIllustration } from '@/components/illustrations/RadarAnalysisIllustration';
+import { PipelineFlowIllustration } from '@/components/illustrations/PipelineFlowIllustration';
+import { DashboardWireframeIllustration } from '@/components/illustrations/DashboardWireframeIllustration';
+import { HeroConstellationIllustration } from '@/components/illustrations/HeroConstellationIllustration';
 
 export const metadata: Metadata = {
   ...baseMetadata,
@@ -16,16 +21,8 @@ const services = [
     href: '/services/ai-agents',
     flip: false,
     icon: (
-      <div className="w-full aspect-square max-w-[320px] relative flex items-center justify-center">
-        <div className="absolute inset-0 border border-[#C49A2A]/30" />
-        <div className="absolute top-6 left-6 w-16 h-16 bg-[#C49A2A]/10 border border-[#C49A2A]/40" />
-        <div className="absolute bottom-6 right-6 w-24 h-24 bg-[#0D1B2A]/5 border border-[#1A2535]/20" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-[#0D1B2A]">
-          <div className="absolute inset-2 border border-[#C49A2A]/50" />
-          <div className="absolute inset-4 bg-[#C49A2A]/20" />
-        </div>
-        <div className="absolute top-6 right-12 w-2 h-2 bg-[#C49A2A]" />
-        <div className="absolute bottom-12 left-8 w-2 h-2 bg-[#C49A2A]" />
+      <div className="w-full aspect-[4/3] max-w-[400px]">
+        <AgentNetworkIllustration />
       </div>
     ),
   },
@@ -38,23 +35,8 @@ const services = [
     href: '/services/ai-consulting',
     flip: true,
     icon: (
-      <div className="w-full aspect-square max-w-[320px] relative flex items-center justify-center">
-        <div className="absolute top-0 left-0 right-0 h-px bg-[#1A2535]/20" />
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-[#1A2535]/20" />
-        <div className="absolute top-0 bottom-0 left-0 w-px bg-[#1A2535]/20" />
-        <div className="absolute top-0 bottom-0 right-0 w-px bg-[#1A2535]/20" />
-        <div className="grid grid-cols-3 gap-3 p-8">
-          {Array.from({ length: 9 }).map((_, i) => (
-            <div
-              key={i}
-              className="aspect-square"
-              style={{
-                background: i % 3 === 0 ? '#C49A2A20' : i % 2 === 0 ? '#0D1B2A0D' : '#0D1B2A05',
-                border: i === 4 ? '1px solid #C49A2A60' : '1px solid #1A253520',
-              }}
-            />
-          ))}
-        </div>
+      <div className="w-full aspect-[4/3] max-w-[400px]">
+        <RadarAnalysisIllustration />
       </div>
     ),
   },
@@ -67,18 +49,8 @@ const services = [
     href: '/services/ai-automation',
     flip: false,
     icon: (
-      <div className="w-full aspect-square max-w-[320px] relative overflow-hidden">
-        <div className="absolute inset-6 border border-[#1A2535]/20" />
-        <div className="absolute top-1/2 left-8 right-8 h-px bg-[#C49A2A]/40" />
-        {[0.2, 0.4, 0.6, 0.8].map((pos) => (
-          <div
-            key={pos}
-            className="absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-[#0D1B2A] border border-[#C49A2A]/60"
-            style={{ left: `${pos * 100}%` }}
-          />
-        ))}
-        <div className="absolute bottom-8 left-8 right-8 h-12 border border-[#1A2535]/20 bg-[#0D1B2A]/5" />
-        <div className="absolute top-8 left-8 w-12 h-12 border border-[#1A2535]/20 bg-[#C49A2A]/10" />
+      <div className="w-full aspect-[4/3] max-w-[400px]">
+        <PipelineFlowIllustration />
       </div>
     ),
   },
@@ -91,24 +63,8 @@ const services = [
     href: '/services/openclaw-setup',
     flip: true,
     icon: (
-      <div className="w-full aspect-square max-w-[320px] relative bg-[#0D1B2A]/3 border border-[#1A2535]/20 p-6">
-        <div className="grid grid-cols-3 gap-2 h-full">
-          <div className="space-y-2">
-            <div className="h-6 bg-[#C49A2A]/20 border border-[#C49A2A]/30" />
-            <div className="h-10 bg-[#0D1B2A]/8 border border-[#1A2535]/20" />
-            <div className="h-10 bg-[#0D1B2A]/8 border border-[#1A2535]/20" />
-            <div className="h-8 bg-[#0D1B2A]/5 border border-[#1A2535]/10" />
-          </div>
-          <div className="space-y-2">
-            <div className="h-6 bg-[#C49A2A]/20 border border-[#C49A2A]/30" />
-            <div className="h-14 bg-[#0D1B2A]/8 border border-[#1A2535]/20" />
-            <div className="h-8 bg-[#0D1B2A]/5 border border-[#1A2535]/10" />
-          </div>
-          <div className="space-y-2">
-            <div className="h-6 bg-[#C49A2A]/20 border border-[#C49A2A]/30" />
-            <div className="h-10 bg-[#0D1B2A]/8 border border-[#1A2535]/20" />
-          </div>
-        </div>
+      <div className="w-full aspect-[4/3] max-w-[400px]">
+        <DashboardWireframeIllustration />
       </div>
     ),
   },
@@ -246,34 +202,10 @@ export default function HomePage() {
               </div>
             </AnimatedSection>
 
-            {/* Geometric composition */}
+            {/* Hero constellation */}
             <AnimatedSection delay={0.2} className="hidden lg:flex items-center justify-center">
-              <div className="relative w-[440px] h-[440px]">
-                {/* Outer frame */}
-                <div className="absolute inset-0 border border-[#F0EDE6]/10" />
-                {/* Large navy square */}
-                <div className="absolute top-8 left-8 right-16 bottom-16 bg-[#1A2535]" />
-                {/* Gold accent rectangle */}
-                <div className="absolute top-16 right-0 w-20 h-32 bg-[#C49A2A]/20 border border-[#C49A2A]/40" />
-                {/* Small inner square */}
-                <div className="absolute bottom-4 left-4 w-28 h-28 bg-[#0D1B2A] border border-[#F0EDE6]/10">
-                  <div className="absolute inset-3 border border-[#C49A2A]/30" />
-                </div>
-                {/* Grid lines */}
-                <div className="absolute top-8 left-8 right-16 h-px bg-[#F0EDE6]/5" style={{ top: '33%' }} />
-                <div className="absolute top-8 left-8 right-16 h-px bg-[#F0EDE6]/5" style={{ top: '66%' }} />
-                {/* Gold dot accents */}
-                <div className="absolute top-6 right-6 w-2 h-2 bg-[#C49A2A]" />
-                <div className="absolute bottom-20 right-8 w-2 h-2 bg-[#C49A2A]" />
-                {/* Corner accent */}
-                <div className="absolute bottom-0 right-0 w-16 h-px bg-[#C49A2A]/40" />
-                <div className="absolute bottom-0 right-0 w-px h-16 bg-[#C49A2A]/40" />
-                {/* Floating label */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-                  <span className="text-[#F0EDE6]/20 text-xs uppercase tracking-[0.3em] font-medium">
-                    Gravitas AI
-                  </span>
-                </div>
+              <div className="relative w-[440px] h-[440px] opacity-70">
+                <HeroConstellationIllustration />
               </div>
             </AnimatedSection>
           </div>
