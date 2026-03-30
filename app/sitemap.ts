@@ -1,5 +1,7 @@
 import type { MetadataRoute } from 'next';
 
+export const dynamic = 'force-static';
+
 const baseUrl = 'https://gravitasai.xyz';
 
 export default function sitemap(): MetadataRoute.Sitemap {
