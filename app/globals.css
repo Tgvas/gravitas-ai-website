@@ -13,7 +13,9 @@
   --color-text-dark: #1A2535;
 
   --font-playfair: var(--font-playfair);
+  --font-serif: var(--font-playfair);
   --font-dm-sans: var(--font-dm-sans);
+  --font-sans: var(--font-dm-sans);
   --font-mono: var(--font-mono);
 }
 
