@@ -1,0 +1,52 @@
+<!-- APPROVED FAVICON — 5-node hidden G constellation. Locked. Do not modify topology. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Gravitas AI">
+  <title>Gravitas AI</title>
+  <style>
+    .bg           { fill: var(--gravitas-navy,  #1a1a2e); }
+    .node         { fill: var(--gravitas-gold,  #c9a84c); }
+    .node-primary { fill: var(--gravitas-gold,  #c9a84c); filter: url(#glow-fg); }
+    .connector    { stroke: var(--gravitas-beige, #f5f0e8); stroke-width: 1.5; fill: none; }
+  </style>
+  <defs>
+    <filter id="glow-fg" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect id="fg-bg" class="bg" width="32" height="32" rx="4"/>
+
+  <!--
+    5-node hidden G — just enough to read as a G when you know to look.
+    N1 (22, 7)   top of arc
+    N2 ( 8,16)   left-mid
+    N3 (22,26)   lower-right (bottom of G)
+    N4 (24,16)   right at crossbar height — PRIMARY
+    N5 (16,16)   crossbar inner point
+
+    Connections: top-arc (1→2), left-descent (2→3), right-rise (3→4),
+    crossbar (4→5), plus one decoy diagonal (1→5) that cuts through the shape.
+  -->
+
+  <!-- Connectors -->
+  <g id="fg-connectors" class="connector">
+    <line id="fg-l1" x1="22" y1="7"  x2="8"  y2="16" opacity="0.60"/>
+    <line id="fg-l2" x1="8"  y1="16" x2="22" y2="26" opacity="0.55"/>
+    <line id="fg-l3" x1="22" y1="26" x2="24" y2="16" opacity="0.60"/>
+    <line id="fg-l4" x1="24" y1="16" x2="16" y2="16" opacity="0.70"/>
+    <line id="fg-l5" x1="22" y1="7"  x2="16" y2="16" opacity="0.30"/>
+  </g>
+
+  <!-- Nodes -->
+  <g id="fg-nodes">
+    <circle id="fg-n1" class="node"         cx="22" cy="7"  r="2.5"/>
+    <circle id="fg-n2" class="node"         cx="8"  cy="16" r="2.5"/>
+    <circle id="fg-n3" class="node"         cx="22" cy="26" r="2.5"/>
+    <circle id="fg-n4" class="node-primary" cx="24" cy="16" r="3.5"/>
+    <circle id="fg-n5" class="node"         cx="16" cy="16" r="2.5"/>
+  </g>
+</svg>

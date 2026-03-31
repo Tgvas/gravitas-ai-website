@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Gravitas AI">
+  <title>Gravitas AI</title>
+  <style>
+    .bg           { fill: var(--gravitas-navy,  #1a1a2e); }
+    .node         { fill: var(--gravitas-gold,  #c9a84c); }
+    .node-primary { fill: var(--gravitas-gold,  #c9a84c); filter: url(#gf-glow); }
+    .connector    { stroke: var(--gravitas-beige, #f5f0e8); stroke-width: 1.2; fill: none; }
+  </style>
+  <defs>
+    <filter id="gf-glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect id="gf-clean-bg" class="bg" width="100" height="100" rx="8"/>
+
+  <!--
+    5-node hidden G — scaled to 100×100 from approved favicon-g.svg (32×32).
+    N1 (69, 22)   top of arc
+    N2 (25, 50)   left-mid
+    N3 (69, 81)   lower-right (bottom of G)
+    N4 (75, 50)   right at crossbar height — PRIMARY
+    N5 (50, 50)   crossbar inner point
+
+    Connections: top-arc (1→2), left-descent (2→3), right-rise (3→4),
+    crossbar (4→5), plus one decoy diagonal (1→5) that cuts through the shape.
+  -->
+
+  <!-- Connectors -->
+  <g id="gf-clean-connectors" class="connector">
+    <line id="gf-clean-l1" x1="69" y1="22" x2="25" y2="50" opacity="0.60"/>
+    <line id="gf-clean-l2" x1="25" y1="50" x2="69" y2="81" opacity="0.55"/>
+    <line id="gf-clean-l3" x1="69" y1="81" x2="75" y2="50" opacity="0.60"/>
+    <line id="gf-clean-l4" x1="75" y1="50" x2="50" y2="50" opacity="0.70"/>
+    <line id="gf-clean-l5" x1="69" y1="22" x2="50" y2="50" opacity="0.30"/>
+  </g>
+
+  <!-- Nodes -->
+  <g id="gf-clean-nodes">
+    <circle id="gf-clean-n1" class="node"         cx="69" cy="22" r="4"/>
+    <circle id="gf-clean-n2" class="node"         cx="25" cy="50" r="4"/>
+    <circle id="gf-clean-n3" class="node"         cx="69" cy="81" r="4"/>
+    <circle id="gf-clean-n4" class="node-primary" cx="75" cy="50" r="6"/>
+    <circle id="gf-clean-n5" class="node"         cx="50" cy="50" r="4"/>
+  </g>
+</svg>

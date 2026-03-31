@@ -49,19 +49,7 @@ export function Nav() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '72px' }}>
             {/* Logo */}
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
-              <div style={{
-                width: '32px',
-                height: '32px',
-                background: '#C49A2A',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '14px',
-                fontWeight: 700,
-                color: '#0D1B2A',
-                fontFamily: 'var(--font-playfair)',
-                letterSpacing: '-0.5px',
-              }}>G</div>
+              <img src="/logo.svg" alt="Gravitas AI mark" width={32} height={32} style={{ display: 'block' }} />
               <span style={{
                 fontFamily: 'var(--font-playfair)',
                 fontWeight: 700,
@@ -220,14 +208,19 @@ export function Nav() {
               href="/"
               onClick={() => setMobileOpen(false)}
               style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '10px',
+                textDecoration: 'none',
+              }}
+            >
+              <img src="/logo.svg" alt="Gravitas AI mark" width={32} height={32} style={{ display: 'block' }} />
+              <span style={{
                 fontFamily: 'var(--font-playfair)',
                 fontWeight: 700,
                 fontSize: '20px',
                 color: '#F0EDE6',
-                textDecoration: 'none',
-              }}
-            >
-              Gravitas AI
+              }}>Gravitas AI</span>
             </Link>
             <button
               onClick={() => setMobileOpen(false)}
