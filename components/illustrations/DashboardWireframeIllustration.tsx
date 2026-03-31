@@ -44,10 +44,10 @@ export function DashboardWireframeIllustration({ navy = '#0D1B2A', gold = '#C49A
         height={HEADER_H}
         rx={2}
         fill={navy}
-        fillOpacity={0.06}
-        stroke={beige}
+        fillOpacity={0.03}
+        stroke={navy}
         strokeWidth={1.5}
-        strokeOpacity={0.2}
+        strokeOpacity={0.15}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.4, delay: 0 }}
@@ -60,8 +60,8 @@ export function DashboardWireframeIllustration({ navy = '#0D1B2A', gold = '#C49A
           cx={PAD + 10 + i * 14}
           cy={PAD + HEADER_H / 2}
           r={3}
-          fill={i === 0 ? gold : beige}
-          fillOpacity={i === 0 ? 0.8 : 0.25}
+          fill={i === 0 ? gold : navy}
+          fillOpacity={i === 0 ? 0.8 : 0.2}
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.25, delay: 0.3 + i * 0.1, ease: 'backOut' }}
@@ -76,8 +76,8 @@ export function DashboardWireframeIllustration({ navy = '#0D1B2A', gold = '#C49A
         width={60}
         height={8}
         rx={1}
-        fill={beige}
-        fillOpacity={0.1}
+        fill={navy}
+        fillOpacity={0.08}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3, delay: 0.4 }}
@@ -98,8 +98,8 @@ export function DashboardWireframeIllustration({ navy = '#0D1B2A', gold = '#C49A
               cx={COLS_X[ci] + 5}
               cy={COL_Y + 8}
               r={2.5}
-              fill={ci === 1 ? gold : beige}
-              fillOpacity={ci === 1 ? 0.7 : 0.25}
+              fill={ci === 1 ? gold : navy}
+              fillOpacity={ci === 1 ? 0.7 : 0.2}
             />
             <rect
               x={COLS_X[ci] + 12}
@@ -107,8 +107,8 @@ export function DashboardWireframeIllustration({ navy = '#0D1B2A', gold = '#C49A
               width={40}
               height={7}
               rx={1}
-              fill={beige}
-              fillOpacity={0.1}
+              fill={navy}
+              fillOpacity={0.08}
             />
 
             {cards.map((h, i) => {
@@ -128,9 +128,9 @@ export function DashboardWireframeIllustration({ navy = '#0D1B2A', gold = '#C49A
                     width={COL_W}
                     height={h}
                     rx={2}
-                    fill={isGold ? gold : beige}
-                    fillOpacity={isGold ? 0.05 : 0.03}
-                    stroke={isGold ? gold : beige}
+                    fill={isGold ? gold : navy}
+                    fillOpacity={isGold ? 0.05 : 0.02}
+                    stroke={isGold ? gold : navy}
                     strokeWidth={1.5}
                     strokeOpacity={isGold ? 0.5 : 0.15}
                   />
@@ -141,8 +141,8 @@ export function DashboardWireframeIllustration({ navy = '#0D1B2A', gold = '#C49A
                     width={COL_W - 24}
                     height={5}
                     rx={1}
-                    fill={beige}
-                    fillOpacity={isGold ? 0.3 : 0.15}
+                    fill={isGold ? gold : navy}
+                    fillOpacity={isGold ? 0.3 : 0.12}
                   />
                   {h > 32 && (
                     <rect
@@ -151,7 +151,7 @@ export function DashboardWireframeIllustration({ navy = '#0D1B2A', gold = '#C49A
                       width={(COL_W - 24) * 0.6}
                       height={4}
                       rx={1}
-                      fill={beige}
+                      fill={isGold ? gold : navy}
                       fillOpacity={isGold ? 0.2 : 0.08}
                     />
                   )}
@@ -185,8 +185,8 @@ export function DashboardWireframeIllustration({ navy = '#0D1B2A', gold = '#C49A
         width={PROGRESS_W}
         height={6}
         rx={3}
-        fill={beige}
-        fillOpacity={0.08}
+        fill={navy}
+        fillOpacity={0.06}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3, delay: 1.5 }}

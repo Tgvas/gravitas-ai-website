@@ -21,8 +21,8 @@ const GOLD_ARROW_START = 2; // arrow from STAGES[2] to STAGES[3] is gold
 function stageIcon(type: string, x: number, y: number, navy: string, gold: string) {
   const cx = x + W / 2;
   const cy = y + H / 2;
-  if (type === 'dot') return <circle cx={cx} cy={cy} r={3} fill={navy} fillOpacity={0.5} />;
-  if (type === 'line') return <line x1={cx - 8} y1={cy} x2={cx + 8} y2={cy} stroke={navy} strokeWidth={1.5} strokeOpacity={0.5} />;
+  if (type === 'dot') return <circle cx={cx} cy={cy} r={3} fill={navy} fillOpacity={0.6} />;
+  if (type === 'line') return <line x1={cx - 8} y1={cy} x2={cx + 8} y2={cy} stroke={navy} strokeWidth={1.5} strokeOpacity={0.6} />;
   if (type === 'grid') {
     return (
       <g>
@@ -58,7 +58,7 @@ export function PipelineFlowIllustration({ navy = '#0D1B2A', gold = '#C49A2A', b
       xmlns="http://www.w3.org/2000/svg"
     >
       {/* Subtle horizontal center guide */}
-      <line x1={20} y1={150} x2={380} y2={150} stroke={beige} strokeWidth={0.5} strokeOpacity={0.08} />
+      <line x1={20} y1={150} x2={380} y2={150} stroke={navy} strokeWidth={0.5} strokeOpacity={0.06} />
 
       {/* Arrows between stages */}
       {STAGES.slice(0, -1).map((stage, i) => {
@@ -67,9 +67,9 @@ export function PipelineFlowIllustration({ navy = '#0D1B2A', gold = '#C49A2A', b
           <motion.path
             key={`arr${i}`}
             d={arrowPath(stage, STAGES[i + 1])}
-            stroke={isGold ? gold : beige}
+            stroke={isGold ? gold : navy}
             strokeWidth={1.5}
-            strokeOpacity={isGold ? 0.8 : 0.3}
+            strokeOpacity={isGold ? 0.8 : 0.2}
             fill="none"
             initial={{ pathLength: 0, opacity: 0 }}
             animate={{ pathLength: 1, opacity: 1 }}
@@ -88,8 +88,8 @@ export function PipelineFlowIllustration({ navy = '#0D1B2A', gold = '#C49A2A', b
           <motion.polygon
             key={`ah${i}`}
             points={`${ax},${ay} ${ax - 6},${ay - 3} ${ax - 6},${ay + 3}`}
-            fill={isGold ? gold : beige}
-            fillOpacity={isGold ? 0.8 : 0.3}
+            fill={isGold ? gold : navy}
+            fillOpacity={isGold ? 0.8 : 0.2}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.2, delay: 1.2 + i * 0.25 }}
@@ -112,10 +112,10 @@ export function PipelineFlowIllustration({ navy = '#0D1B2A', gold = '#C49A2A', b
             height={H}
             rx={4}
             fill={navy}
-            fillOpacity={0.06}
-            stroke={beige}
+            fillOpacity={0.03}
+            stroke={navy}
             strokeWidth={1.5}
-            strokeOpacity={0.3}
+            strokeOpacity={0.2}
           />
           {stageIcon(s.icon, s.x, s.y, navy, gold)}
         </motion.g>
@@ -164,9 +164,9 @@ export function PipelineFlowIllustration({ navy = '#0D1B2A', gold = '#C49A2A', b
           y1={s.y + H + 8}
           x2={s.x + W / 2}
           y2={s.y + H + 14}
-          stroke={beige}
+          stroke={navy}
           strokeWidth={1}
-          strokeOpacity={0.2}
+          strokeOpacity={0.15}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3, delay: 0.4 + i * 0.15 }}
@@ -179,9 +179,9 @@ export function PipelineFlowIllustration({ navy = '#0D1B2A', gold = '#C49A2A', b
         y1={220}
         x2={360}
         y2={220}
-        stroke={beige}
+        stroke={navy}
         strokeWidth={1}
-        strokeOpacity={0.1}
+        strokeOpacity={0.08}
         strokeDasharray="3 6"
         initial={{ pathLength: 0, opacity: 0 }}
         animate={{ pathLength: 1, opacity: 1 }}

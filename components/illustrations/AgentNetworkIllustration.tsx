@@ -48,7 +48,7 @@ export function AgentNetworkIllustration({ navy = '#0D1B2A', gold = '#C49A2A', b
       xmlns="http://www.w3.org/2000/svg"
     >
       {/* Background grid */}
-      <g stroke={beige} strokeWidth={0.5} opacity={0.08}>
+      <g stroke={navy} strokeWidth={0.5} opacity={0.07}>
         {gridLines()}
       </g>
 
@@ -63,7 +63,7 @@ export function AgentNetworkIllustration({ navy = '#0D1B2A', gold = '#C49A2A', b
             y2={a.y}
             stroke={navy}
             strokeWidth={1.5}
-            strokeOpacity={0.4}
+            strokeOpacity={0.25}
             initial={{ pathLength: 0, opacity: 0 }}
             animate={{ pathLength: 1, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 + i * 0.1 }}
@@ -79,9 +79,9 @@ export function AgentNetworkIllustration({ navy = '#0D1B2A', gold = '#C49A2A', b
           y1={AGENTS[i].y}
           x2={AGENTS[j].x}
           y2={AGENTS[j].y}
-          stroke={beige}
+          stroke={navy}
           strokeWidth={1}
-          strokeOpacity={0.25}
+          strokeOpacity={0.15}
           strokeDasharray="3 4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -111,7 +111,7 @@ export function AgentNetworkIllustration({ navy = '#0D1B2A', gold = '#C49A2A', b
           transition={{ duration: 0.3, delay: 0.15 * i, ease: 'backOut' }}
           style={{ transformOrigin: `${a.x}px ${a.y}px` }}
         >
-          <circle cx={a.x} cy={a.y} r={6} fill={navy} stroke={`${beige}50`} strokeWidth={1.5} />
+          <circle cx={a.x} cy={a.y} r={6} fill={navy} stroke={navy} strokeOpacity={0.2} strokeWidth={1.5} />
           {i === GOLD_PATH_IDX && (
             <motion.circle
               cx={a.x}
