@@ -70,7 +70,7 @@ export function Footer() {
             </div>
             <div style={{ display: 'flex', gap: '16px', marginTop: '24px' }}>
               <a
-                href="https://linkedin.com/company/gravitas-ai"
+                href="https://www.linkedin.com/company/gravitas-ai-llc"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: 'rgba(240,237,230,0.5)', transition: 'color 150ms' }}

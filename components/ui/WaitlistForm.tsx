@@ -80,7 +80,7 @@ export function WaitlistForm({
 
   if (layout === 'stacked') {
     return (
-      <form onSubmit={handleSubmit} style={{ width: '100%', maxWidth: '480px' }}>
+      <form onSubmit={handleSubmit} style={{ width: '100%', maxWidth: '480px', margin: '0 auto' }}>
         <div style={{ marginBottom: '12px' }}>
           <input
             type="email"
@@ -136,7 +136,7 @@ export function WaitlistForm({
   return (
     <form
       onSubmit={handleSubmit}
-      style={{ display: 'flex', flexDirection: 'column', gap: '8px', width: '100%', maxWidth: '480px' }}
+      style={{ display: 'flex', flexDirection: 'column', gap: '8px', width: '100%', maxWidth: '480px', margin: '0 auto' }}
     >
       <div style={{ display: 'flex', gap: '0' }}>
         <input
