@@ -51,7 +51,7 @@ const orgSchema = {
   legalName: 'Gravitas AI LLC',
   url: 'https://gravitasai.xyz',
   email: 'hello@gravitasai.xyz',
-  foundingDate: '2024',
+  foundingDate: '2026',
   founder: {
     '@type': 'Person',
     name: 'Chris Graves',
@@ -110,10 +110,10 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[#8A8070] leading-relaxed">
                 <p>
-                  Gravitas AI grew out of years of building AI agent systems for large organizations. Chris Graves spent his career as a Principal Software Engineer at the intersection of AI and enterprise operations — building systems that had to work at scale, under real business constraints, with real consequences for failure.
+                  Gravitas AI grew out of hands-on experience building AI agent systems in enterprise environments. Chris Graves works as a Principal Software Engineer at the intersection of AI and business operations — building systems that work at scale, under real business constraints.
                 </p>
                 <p>
-                  That experience produced OpenClaw, an enterprise-grade AI orchestration platform, and eventually Gravitas AI — a company built to bring that same level of engineering rigor and operational expertise to businesses that couldn&apos;t justify a full AI team.
+                  That experience led to deep expertise with OpenClaw, an enterprise-grade AI orchestration platform, and eventually Gravitas AI — a company built to bring that same level of engineering rigor and operational expertise to businesses that couldn&apos;t justify a full AI team.
                 </p>
                 <p>
                   Most businesses know they need AI but don&apos;t know where to start. We do the heavy lifting — architecture, deployment, operations — so you get the outcomes without the overhead.
@@ -207,10 +207,10 @@ export default function AboutPage() {
             <AnimatedSection delay={0.15} className="lg:col-span-2">
               <div className="space-y-5 text-[#8A8070] leading-relaxed">
                 <p className="text-lg text-[#F0EDE6]">
-                  Chris Graves is a Principal Software Engineer with extensive experience building AI agent systems for enterprise organizations.
+                  Chris Graves is a Principal Software Engineer who builds AI agent systems for businesses.
                 </p>
                 <p>
-                  His background spans the full engineering stack — from AI model selection and prompt engineering to distributed systems, API design, and production operations. He has built agent systems that operate at scale in regulated industries, handling sensitive data and high-stakes decisions with appropriate oversight and auditability.
+                  His background spans the full engineering stack — from AI model selection and prompt engineering to distributed systems, API design, and production operations. He brings enterprise engineering discipline to every AI deployment.
                 </p>
                 <p>
                   Chris is the developer behind OpenClaw, the enterprise AI orchestration platform that powers Gravitas AI&apos;s deployments. He founded Gravitas AI to bring enterprise-grade AI operations to businesses that couldn&apos;t build it themselves — providing the architecture, implementation, and ongoing management that makes AI actually work in production.

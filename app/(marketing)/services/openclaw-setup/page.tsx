@@ -122,7 +122,7 @@ export default function OpenClawSetupPage() {
                 OpenClaw is an enterprise-grade AI agent orchestration platform built for production operations. It provides the infrastructure for running multiple AI agents in coordinated workflows, with robust error handling, audit logging, human oversight mechanisms, and the reliability that enterprise deployments require.
               </p>
               <p className="text-[#8A8070] leading-relaxed text-lg">
-                Gravitas AI was founded by one of the engineers behind OpenClaw. When we configure it for your business, you&apos;re getting the people who know the platform best.
+                We&apos;ve deployed OpenClaw extensively and know the platform inside and out. When we configure it for your business, you&apos;re getting deep operational expertise.
               </p>
             </AnimatedSection>
 
@@ -236,7 +236,7 @@ export default function OpenClawSetupPage() {
               Ready to deploy OpenClaw in your organization?
             </h2>
             <p className="text-[#8A8070] mb-8 max-w-xl mx-auto leading-relaxed">
-              Starting from $2,500. Configuration engagements typically take 2–4 weeks from kickoff to launch.
+              Configuration engagements typically take 2–4 weeks from kickoff to launch. Contact us for a custom quote.
             </p>
             <a
               href="mailto:hello@gravitasai.xyz?subject=OpenClaw Setup Inquiry"

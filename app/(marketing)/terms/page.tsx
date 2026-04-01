@@ -92,7 +92,7 @@ export default function TermsPage() {
                       <p><strong className="text-[#1A2535] font-semibold">Our IP:</strong> Gravitas AI owns all intellectual property rights in our platform, software, methodologies, processes, and documentation. Nothing in these Terms transfers any of our IP rights to you.</p>
                       <p><strong className="text-[#1A2535] font-semibold">Your IP:</strong> You retain ownership of your business data, workflows, and any materials you provide to us. You grant us a limited license to use your materials solely to provide the services.</p>
                       <p><strong className="text-[#1A2535] font-semibold">Deliverables:</strong> Custom deliverables created specifically for you under an SOW are owned by you upon full payment, unless otherwise specified in the SOW. General-purpose tools, templates, and methodologies remain our property.</p>
-                      <p><strong className="text-[#1A2535] font-semibold">OpenClaw:</strong> OpenClaw is a proprietary platform owned by Gravitas AI. Your service agreement grants you a license to use the platform during your subscription. This license terminates upon cancellation.</p>
+                      <p><strong className="text-[#1A2535] font-semibold">OpenClaw:</strong> OpenClaw is a third-party AI orchestration platform that we deploy and configure as part of our services. Your use of OpenClaw is subject to its own license terms.</p>
                     </div>
                   ),
                 },

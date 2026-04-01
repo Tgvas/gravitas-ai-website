@@ -223,12 +223,12 @@ export default function PlatformPage() {
       <section className="bg-[#F5F0E8] py-16">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <p className="text-[#8A8070] mb-4">Platform access included with Growth and Enterprise plans.</p>
+            <p className="text-[#8A8070] mb-4">Platform access included with all service engagements.</p>
             <a
-              href="/pricing"
+              href="mailto:hello@gravitasai.xyz?subject=Platform Inquiry"
               className="inline-flex items-center text-sm font-medium text-[#1A2535] hover:text-[#C49A2A] transition-colors"
             >
-              View pricing details →
+              Book a strategy call →
             </a>
           </AnimatedSection>
         </div>
