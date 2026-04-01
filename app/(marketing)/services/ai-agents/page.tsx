@@ -5,7 +5,7 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/ui/
 
 export const metadata: Metadata = createPageMetadata(
   'AI Agent Setup',
-  'Deploy AI agent teams configured for your business. Gravitas AI handles setup, testing, integration, and 30 days of support — so your agents are operational from day one.',
+  'Deploy AI agent teams configured for your business. Gravitas AI handles setup, testing, integration, and 30 days of support so your agents are operational from day one.',
   '/services/ai-agents'
 );
 
@@ -29,7 +29,7 @@ const process = [
     step: '02',
     title: 'Architecture',
     description:
-      'We design the agent topology — which tasks each agent handles, how they hand off work, and where human review is required.',
+      'We design the agent topology: which tasks each agent handles, how they hand off work, and where human review is required.',
   },
   {
     step: '03',
@@ -98,7 +98,7 @@ export default function AIAgentsPage() {
               Deploy AI Agent Teams. Operate at Scale.
             </h1>
             <p className="text-xl text-[#8A8070] leading-relaxed mb-10">
-              AI agents that are actually configured for your operations — not demos, not prototypes. We handle every step from architecture to launch.
+              AI agents that are actually configured for your operations. Not demos, not prototypes. We handle every step from architecture to launch.
             </p>
             <a
               href="mailto:hello@gravitasai.xyz?subject=AI Agent Setup Inquiry"
@@ -128,7 +128,7 @@ export default function AIAgentsPage() {
                 Hiring more people isn&apos;t always the answer.
               </h2>
               <p className="text-[#8A8070] leading-relaxed text-lg">
-                AI agents can handle repetitive, high-volume tasks — data entry, customer triage, content processing, report generation — but only if they&apos;re properly configured and integrated. Most AI agent tools require significant technical expertise to deploy correctly. Getting it wrong means agents that hallucinate, break workflows, or simply don&apos;t deliver business value.
+                AI agents can handle repetitive, high-volume tasks, including data entry, customer triage, content processing, and report generation, but only if they&apos;re properly configured and integrated. Most AI agent tools require significant technical expertise to deploy correctly. Getting it wrong means agents that hallucinate, break workflows, or simply don&apos;t deliver business value.
               </p>
             </AnimatedSection>
 
@@ -146,7 +146,7 @@ export default function AIAgentsPage() {
                 Enterprise-grade agent deployment, done right.
               </h2>
               <p className="text-[#8A8070] leading-relaxed text-lg">
-                We deploy and configure AI agent teams using OpenClaw, the enterprise-grade agent orchestration platform. Your agents are configured for your specific use cases, tested against your real data, integrated with your existing tools, and ready to operate before they touch production — with a human review process in place from day one.
+                We deploy and configure AI agent teams using OpenClaw, the enterprise-grade agent orchestration platform. Your agents are configured for your specific use cases, tested against your real data, integrated with your existing tools, and ready to operate before they touch production, with a human review process in place from day one.
               </p>
             </AnimatedSection>
           </div>

@@ -3,7 +3,7 @@ import { AnimatedSection } from '@/components/ui/AnimatedSection';
 const faqs = [
   {
     q: 'How does pricing work?',
-    a: "We design custom solutions based on your specific needs, scale, and goals. After a strategy call, we'll put together a proposal that reflects exactly what you need — no more, no less.",
+    a: "We design custom solutions based on your specific needs, scale, and goals. After a strategy call, we'll put together a proposal that reflects exactly what you need. No more, no less.",
   },
   {
     q: 'Can I cancel anytime?',
@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: 'Do you offer a free trial?',
-    a: "We don't offer a free trial, but every engagement starts with a strategy call where we map out what your AI operations would look like. If we're not a fit, we'll tell you — before you spend anything.",
+    a: "We don't offer a free trial, but every engagement starts with a strategy call where we map out what your AI operations would look like. If we're not a fit, we'll tell you before you spend anything.",
   },
   {
     q: 'What kind of support do I get?',
@@ -19,11 +19,11 @@ const faqs = [
   },
   {
     q: 'Do I need technical knowledge to get started?',
-    a: "No. Our clients range from technical founders to operations leaders with no engineering background. We handle all the technical complexity. You need to understand your business and your workflows — we handle the rest.",
+    a: "No. Our clients range from technical founders to operations leaders with no engineering background. We handle all the technical complexity. You just need to understand your business and your workflows.",
   },
   {
     q: 'What happens during the strategy call?',
-    a: "We spend 45–60 minutes learning about your business, your operations, and where you're currently wasting time or money. By the end, we'll identify specific automation opportunities and give you an honest assessment of what they'd cost and return. No pitch deck, no fluff.",
+    a: "We spend 45 to 60 minutes learning about your business, your operations, and where you're currently wasting time or money. By the end, we'll identify specific automation opportunities and give you an honest assessment of what they'd cost and return. No pitch deck, no fluff.",
   },
 ];
 
@@ -160,7 +160,7 @@ export default function PricingPage() {
               Ready to talk through what you need?
             </h2>
             <p className="text-[#8A8070] mb-8 max-w-xl mx-auto leading-relaxed">
-              Start with a strategy call. We&apos;ll tell you exactly what you need — and what you don&apos;t.
+              Start with a strategy call. We&apos;ll tell you exactly what you need, and what you don&apos;t.
             </p>
             <a
               href="mailto:hello@gravitasai.xyz"

@@ -180,7 +180,7 @@ export default function ContactPage() {
                     Book a Strategy Call
                   </h3>
                   <p className="text-[#8A8070] leading-relaxed text-sm mb-6">
-                    The fastest way to get started. A 45–60 minute call where we map your operations, identify automation opportunities, and give you an honest assessment — no pitch deck required.
+                    The fastest way to get started. A 45 to 60 minute call where we map your operations, identify automation opportunities, and give you an honest assessment. No pitch deck required.
                   </p>
                   <a
                     href="mailto:hello@gravitasai.xyz?subject=Strategy Call Request"
@@ -213,7 +213,7 @@ export default function ContactPage() {
                 {/* Response time note */}
                 <div className="bg-[#0D1B2A]/5 border border-[#1A2535]/10 p-6">
                   <p className="text-[#1A2535] text-sm leading-relaxed">
-                    <strong className="font-semibold">Response time:</strong> We respond within 1 business day. Strategy calls are typically scheduled within 3–5 business days.
+                    <strong className="font-semibold">Response time:</strong> We respond within 1 business day. Strategy calls are typically scheduled within 3 to 5 business days.
                   </p>
                 </div>
               </div>

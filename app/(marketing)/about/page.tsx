@@ -12,7 +12,7 @@ const values = [
   {
     title: 'Outcomes Over Outputs',
     description:
-      "We don't measure success by agents deployed or pipelines built. We measure it by the business results you get — cost reduction, throughput increase, hours reclaimed.",
+      "We don't measure success by agents deployed or pipelines built. We measure it by the business results: cost reduction, throughput, and time reclaimed.",
   },
   {
     title: 'Engineering Rigor',
@@ -27,7 +27,7 @@ const values = [
   {
     title: 'Long-Term Partnership',
     description:
-      "We're not a one-and-done vendor. Our best client relationships are ongoing — we grow with you as your AI operations mature and your ambitions expand.",
+      "We're not a one-and-done vendor. Our best client relationships are ongoing. We grow with you as your AI operations mature and your ambitions expand.",
   },
 ];
 
@@ -57,7 +57,7 @@ const orgSchema = {
     name: 'Chris Graves',
   },
   description:
-    'Gravitas AI deploys and manages AI agent teams for businesses — handling setup, configuration, and ongoing operations.',
+    'Gravitas AI deploys and manages AI agent teams for businesses, handling setup, configuration, and ongoing operations.',
 };
 
 export default function AboutPage() {
@@ -85,7 +85,7 @@ export default function AboutPage() {
               We Build AI Teams That Work Like Yours.
             </h1>
             <p className="text-xl text-[#8A8070] leading-relaxed">
-              Gravitas AI was founded on a simple belief: businesses shouldn&apos;t have to hire an AI team to get the benefits of AI. We bring the engineering, the platform, and the operational expertise — so you get the outcomes.
+              Gravitas AI was founded on a simple belief: businesses shouldn&apos;t have to hire an AI team to get the benefits of AI. We bring the engineering, the platform, and the operational expertise. You get the outcomes.
             </p>
           </AnimatedSection>
         </div>
@@ -110,13 +110,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[#8A8070] leading-relaxed">
                 <p>
-                  Gravitas AI grew out of hands-on experience building AI agent systems in enterprise environments. Chris Graves works as a Principal Software Engineer at the intersection of AI and business operations — building systems that work at scale, under real business constraints.
+                  Gravitas AI grew out of hands-on experience building AI agent systems in enterprise environments. Chris Graves works as a Principal Software Engineer at the intersection of AI and business operations, building systems that work at scale under real business constraints.
                 </p>
                 <p>
-                  That experience led to deep expertise with OpenClaw, an enterprise-grade AI orchestration platform, and eventually Gravitas AI — a company built to bring that same level of engineering rigor and operational expertise to businesses that couldn&apos;t justify a full AI team.
+                  That experience led to deep expertise with OpenClaw, an enterprise-grade AI orchestration platform, and eventually Gravitas AI, a company built to bring that same level of engineering rigor and operational expertise to businesses that couldn&apos;t justify a full AI team.
                 </p>
                 <p>
-                  Most businesses know they need AI but don&apos;t know where to start. We do the heavy lifting — architecture, deployment, operations — so you get the outcomes without the overhead.
+                  Most businesses know they need AI but don&apos;t know where to start. We handle the architecture, deployment, and operations so you get the outcomes without the overhead.
                 </p>
               </div>
             </AnimatedSection>
@@ -136,7 +136,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[#8A8070] leading-relaxed">
                 <p>
-                  AI is the most significant operational leverage available to businesses today. But the gap between &ldquo;AI demo&rdquo; and &ldquo;AI operations&rdquo; is wide — and most companies fall into it.
+                  AI is the biggest operational advantage businesses have right now. But the gap between an AI demo and actual AI operations is wide, and most companies fall into it.
                 </p>
                 <p>
                   Our mission is to close that gap. We handle the complexity so our clients can focus on the outcomes: lower costs, higher throughput, better decisions, and teams that spend their time on work that actually requires human judgment.
@@ -146,7 +146,7 @@ export default function AboutPage() {
               <div className="mt-8 border border-[#1A2535]/15 p-6">
                 <div className="w-6 h-px bg-[#C49A2A] mb-4" />
                 <p className="text-[#1A2535] font-medium leading-relaxed italic" style={{ fontFamily: 'var(--font-serif)' }}>
-                  &ldquo;Most businesses know they need AI but don&apos;t know where to start. We do the heavy lifting — architecture, deployment, operations — so you get the outcomes without the overhead.&rdquo;
+                  &ldquo;Most businesses know they need AI but don&apos;t know where to start. We handle the architecture, deployment, and operations so you get the outcomes without the overhead.&rdquo;
                 </p>
               </div>
             </AnimatedSection>
@@ -210,13 +210,13 @@ export default function AboutPage() {
                   Chris Graves is a Principal Software Engineer who builds AI agent systems for businesses.
                 </p>
                 <p>
-                  His background spans the full engineering stack — from AI model selection and prompt engineering to distributed systems, API design, and production operations. He brings enterprise engineering discipline to every AI deployment.
+                  His background spans the full engineering stack: from AI model selection and prompt engineering to distributed systems, API design, and production operations. He brings enterprise engineering discipline to every AI deployment.
                 </p>
                 <p>
-                  Chris is the developer behind OpenClaw, the enterprise AI orchestration platform that powers Gravitas AI&apos;s deployments. He founded Gravitas AI to bring enterprise-grade AI operations to businesses that couldn&apos;t build it themselves — providing the architecture, implementation, and ongoing management that makes AI actually work in production.
+                  Chris is the developer behind OpenClaw, the enterprise AI orchestration platform that powers Gravitas AI&apos;s deployments. He founded Gravitas AI to bring enterprise-grade AI operations to businesses that couldn&apos;t build it themselves, providing the architecture, implementation, and ongoing management that makes AI actually work in production.
                 </p>
                 <p>
-                  He believes the future of business operations involves AI agents handling the high-volume, rule-based work — freeing human teams to focus on judgment, relationships, and creativity. Gravitas AI exists to make that transition as smooth and practical as possible.
+                  He believes the future of business operations involves AI agents handling the high-volume, rule-based work, freeing human teams to focus on judgment, relationships, and creativity. Gravitas AI exists to make that transition as smooth and practical as possible.
                 </p>
               </div>
             </AnimatedSection>

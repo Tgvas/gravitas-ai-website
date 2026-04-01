@@ -6,8 +6,8 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Gravitas AI — Your AI Operations Team, Professionally Deployed',
-    template: '%s — Gravitas AI',
+    default: 'Gravitas AI: Your AI Operations Team, Professionally Deployed',
+    template: '%s | Gravitas AI',
   },
   description: siteConfig.description,
   openGraph: {

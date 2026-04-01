@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import { createPageMetadata } from '@/lib/metadata';
 import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/ui/AnimatedSection';
+import { WaitlistForm } from '@/components/ui/WaitlistForm';
 
 export const metadata: Metadata = createPageMetadata(
   'AI Operations Platform',
-  'The platform built for managing AI agent teams. Kanban boards for AI tasks, agent scheduling, human-in-the-loop review, and audit trails — all in one place.',
+  'The platform built for managing AI agent teams. Kanban boards for AI tasks, agent scheduling, human-in-the-loop review, and audit trails. All in one place.',
   '/platform'
 );
 
@@ -12,7 +13,7 @@ const features = [
   {
     title: 'Kanban Boards for AI Tasks',
     description:
-      'Visualize exactly what every agent is working on. Tasks move through your workflow stages just like your team — except the doers are AI.',
+      'Visualize exactly what every agent is working on. Tasks move through your workflow stages just like your human team, except the doers are AI.',
   },
   {
     title: 'Agent Assignment & Scheduling',
@@ -27,7 +28,7 @@ const features = [
   {
     title: 'Human-in-the-Loop Review',
     description:
-      'Define confidence thresholds and risk levels. Low-confidence outputs land in a human review queue automatically — nothing sensitive ships without approval.',
+      'Define confidence thresholds and risk levels. Low-confidence outputs land in a human review queue automatically; nothing sensitive ships without approval.',
   },
   {
     title: 'Audit Trails & Compliance',
@@ -65,14 +66,9 @@ export default function PlatformPage() {
                 Not just a chatbot. A whole org chart that ships.
               </p>
               <p className="text-[#8A8070] leading-relaxed mb-10">
-                Think Jira, but your team members are AI agents. Gravitas AI&apos;s operations platform gives you the visibility, control, and oversight to manage AI agents like you manage people — with accountability, structure, and results.
+                Think Jira, but your team members are AI agents. Gravitas AI&apos;s operations platform gives you the visibility and control to manage AI agents like you manage people, with accountability and clear results.
               </p>
-              <a
-                href="mailto:hello@gravitasai.xyz?subject=Platform Early Access"
-                className="inline-flex items-center justify-center bg-[#C49A2A] text-[#0D1B2A] font-semibold px-8 py-4 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
-              >
-                Request Early Access
-              </a>
+              <WaitlistForm layout="inline" theme="gold-on-navy" />
             </AnimatedSection>
 
             {/* Platform mockup */}
@@ -206,14 +202,9 @@ export default function PlatformPage() {
                 &ldquo;Think Jira, but your team members are AI agents.&rdquo;
               </blockquote>
               <p className="text-[#8A8070] leading-relaxed text-lg mb-10">
-                Operations teams already know how to manage work in queues, boards, and pipelines. The Gravitas AI platform applies that same mental model to AI — so your team can adopt it without learning a new way to work.
+                Operations teams already know how to manage work in queues, boards, and pipelines. The Gravitas AI platform applies that same mental model to AI, so your team can adopt it without learning a new way to work.
               </p>
-              <a
-                href="mailto:hello@gravitasai.xyz?subject=Platform Early Access"
-                className="inline-flex items-center justify-center bg-[#C49A2A] text-[#0D1B2A] font-semibold px-10 py-4 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
-              >
-                Request Early Access
-              </a>
+              <WaitlistForm layout="stacked" theme="gold-on-navy" />
             </AnimatedSection>
           </div>
         </div>

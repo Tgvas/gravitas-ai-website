@@ -4,7 +4,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 
 export const metadata: Metadata = createPageMetadata(
   'Terms of Service',
-  'Gravitas AI LLC Terms of Service — the terms governing your use of our website and services.',
+  'Gravitas AI LLC Terms of Service: the terms governing your use of our website and services.',
   '/terms'
 );
 
@@ -100,7 +100,7 @@ export default function TermsPage() {
                   title: '6. Confidentiality',
                   content: (
                     <div className="space-y-4 text-[#8A8070] leading-relaxed">
-                      <p>Each party agrees to maintain the confidentiality of the other party&apos;s confidential information — including business data, strategies, technical information, and pricing — and not to disclose it to third parties without prior written consent.</p>
+                      <p>Each party agrees to maintain the confidentiality of the other party&apos;s confidential information, including business data, strategies, technical information, and pricing, and not to disclose it to third parties without prior written consent.</p>
                       <p>Confidentiality obligations do not apply to information that: (a) becomes publicly available through no breach by the receiving party; (b) was independently developed; (c) was rightfully obtained from a third party; or (d) is required to be disclosed by law.</p>
                     </div>
                   ),

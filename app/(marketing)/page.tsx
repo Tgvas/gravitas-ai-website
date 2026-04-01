@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/ui/AnimatedSection';
 import { baseMetadata } from '@/lib/metadata';
+import { WaitlistForm } from '@/components/ui/WaitlistForm';
 import { AgentNetworkIllustration } from '@/components/illustrations/AgentNetworkIllustration';
 import { RadarAnalysisIllustration } from '@/components/illustrations/RadarAnalysisIllustration';
 import { PipelineFlowIllustration } from '@/components/illustrations/PipelineFlowIllustration';
@@ -59,7 +60,7 @@ const services = [
     title: 'AI Operations Platform',
     outcome: 'One place to manage, monitor, and scale your entire AI team.',
     description:
-      'Built on OpenClaw, our AI operations platform gives you Kanban-style task management for agents, real-time progress tracking, and human-in-the-loop review — all in one dashboard.',
+      'Built on OpenClaw, our AI operations platform gives you Kanban-style task management for agents, real-time progress tracking, and human-in-the-loop review. All in one dashboard.',
     href: '/services/openclaw-setup',
     flip: true,
     icon: (
@@ -74,7 +75,7 @@ const steps = [
   {
     number: '01',
     title: 'Strategy Call',
-    description: 'We learn your business, your team, and where AI can deliver real results — not just demos.',
+    description: 'We learn your business, your team, and where AI can deliver real results, not just demos.',
   },
   {
     number: '02',
@@ -89,7 +90,7 @@ const steps = [
   {
     number: '04',
     title: 'Scale & Optimize',
-    description: 'Once the system is proven, we expand it — more agents, more pipelines, more leverage for your business.',
+    description: 'Once the system is proven, we expand it: more agents, broader pipelines, more value for your business.',
   },
 ];
 
@@ -101,7 +102,7 @@ const orgSchema = {
   url: 'https://gravitasai.xyz',
   email: 'hello@gravitasai.xyz',
   description:
-    'Gravitas AI deploys and manages AI agent teams for businesses — handling setup, configuration, and ongoing operations.',
+    'Gravitas AI deploys and manages AI agent teams for businesses, handling setup, configuration, and ongoing operations.',
   founder: {
     '@type': 'Person',
     name: 'Chris Graves',
@@ -137,7 +138,7 @@ export default function HomePage() {
                 Your AI Operations Team, Professionally Deployed.
               </h1>
               <p className="text-lg text-[#8A8070] leading-relaxed mb-10 max-w-xl">
-                Gravitas AI deploys and manages AI agent teams for your business — handling the setup, configuration, and ongoing operations so you can focus on outcomes, not infrastructure.
+                Gravitas AI deploys and manages AI agent teams for your business, handling setup, configuration, and ongoing operations so you can focus on outcomes, not infrastructure.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -245,14 +246,9 @@ export default function HomePage() {
                 Manage Your AI Team Like a Pro
               </h2>
               <p className="text-[#8A8070] leading-relaxed mb-8 text-lg">
-                A project management platform built for AI operations. Assign tasks to agents, track progress, review outputs, and keep humans in the loop — all in one place.
+                A project management platform built for AI operations. Assign tasks to agents, track progress, review outputs, and keep humans in the loop. All in one place.
               </p>
-              <a
-                href="mailto:hello@gravitasai.xyz?subject=Platform Early Access"
-                className="inline-flex items-center justify-center bg-[#C49A2A] text-[#0D1B2A] font-semibold px-8 py-4 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
-              >
-                Request Early Access
-              </a>
+              <WaitlistForm layout="inline" theme="gold-on-navy" />
             </AnimatedSection>
 
             {/* Platform UI mockup */}
@@ -349,7 +345,7 @@ export default function HomePage() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {[
                   { label: 'US-Based Team', desc: 'All work done by our team, in the US.' },
-                  { label: 'Dedicated Support', desc: 'Direct access to our engineering team — no ticket queues.' },
+                  { label: 'Dedicated Support', desc: 'Direct access to our engineering team. No ticket queues.' },
                   { label: 'Security-First Architecture', desc: 'Isolated environments, encrypted data, and full audit trails by default.' },
                 ].map((badge) => (
                   <div key={badge.label} className="border border-[#1A2535]/15 p-6">

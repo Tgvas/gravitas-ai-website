@@ -4,7 +4,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 
 export const metadata: Metadata = createPageMetadata(
   'Privacy Policy',
-  'Gravitas AI LLC Privacy Policy — how we collect, use, and protect your personal information.',
+  'Gravitas AI LLC Privacy Policy: how we collect, use, and protect your personal information.',
   '/privacy'
 );
 

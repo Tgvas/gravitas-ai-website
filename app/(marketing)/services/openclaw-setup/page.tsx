@@ -13,7 +13,7 @@ const features = [
   {
     title: 'Platform Installation & Configuration',
     description:
-      'Full OpenClaw deployment on your infrastructure or cloud environment — configured for your scale, security requirements, and existing toolchain.',
+      'Full OpenClaw deployment on your infrastructure or cloud environment, configured for your scale, security requirements, and existing toolchain.',
   },
   {
     title: 'Agent Orchestration Setup',
@@ -23,12 +23,12 @@ const features = [
   {
     title: 'Integration Layer',
     description:
-      'Connect OpenClaw to your existing stack — CRMs, project management tools, communication platforms, databases, and APIs — via native connectors and custom webhooks.',
+      'Connect OpenClaw to your existing stack via native connectors and custom webhooks: CRMs, project management tools, communication platforms, databases, and APIs.',
   },
   {
     title: 'Human-in-the-Loop Configuration',
     description:
-      'Define exactly when and how human reviewers are engaged. Confidence thresholds, escalation paths, approval workflows, and audit trails — all configured to your risk tolerance.',
+      'Define exactly when and how human reviewers are engaged. Confidence thresholds, escalation paths, approval workflows, and audit trails, all configured to your risk tolerance.',
   },
   {
     title: 'Monitoring & Alerting',
@@ -89,7 +89,7 @@ export default function OpenClawSetupPage() {
               Enterprise AI Orchestration, Configured for You.
             </h1>
             <p className="text-xl text-[#8A8070] leading-relaxed mb-10">
-              OpenClaw is the platform that powers serious AI operations. We handle the full setup — platform deployment, agent configuration, integrations, and team training — so you get results from day one.
+              OpenClaw is the platform that powers serious AI operations. We handle the full setup: platform deployment, agent configuration, integrations, and team training. You get results from day one.
             </p>
             <a
               href="mailto:hello@gravitasai.xyz?subject=OpenClaw Setup Inquiry"
@@ -140,7 +140,7 @@ export default function OpenClawSetupPage() {
                 The difference between a demo and production.
               </h2>
               <p className="text-[#8A8070] leading-relaxed text-lg">
-                OpenClaw is powerful — and that power requires proper configuration. Incorrect setup leads to agents that exceed their authority, pipelines that fail silently, and integrations that corrupt data. Our setup engagements follow a proven methodology to ensure your deployment is production-grade from day one, not an experiment that you have to fix later.
+                OpenClaw is powerful, and that power requires proper configuration. Incorrect setup leads to agents that exceed their authority, pipelines that fail silently, and integrations that corrupt data. Our setup engagements follow a proven methodology to ensure your deployment is production-grade from day one, not an experiment that you have to fix later.
               </p>
             </AnimatedSection>
           </div>
@@ -205,7 +205,7 @@ export default function OpenClawSetupPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { step: '01', title: 'Technical Discovery', desc: 'We review your infrastructure, security requirements, and existing integrations to design the right OpenClaw deployment architecture.' },
-              { step: '02', title: 'Platform Deployment', desc: 'We deploy and configure OpenClaw in your environment — cloud or on-premise — with security, networking, and access controls in place.' },
+              { step: '02', title: 'Platform Deployment', desc: 'We deploy and configure OpenClaw in your environment, cloud or on-premise, with security, networking, and access controls in place.' },
               { step: '03', title: 'Agent & Workflow Setup', desc: "We configure your initial agent team and workflows, connect your integrations, and validate everything in a staging environment." },
               { step: '04', title: 'Launch & Handover', desc: "We go live, monitor the first two weeks closely, and deliver full admin training and documentation for your team." },
             ].map((item) => (
@@ -236,7 +236,7 @@ export default function OpenClawSetupPage() {
               Ready to deploy OpenClaw in your organization?
             </h2>
             <p className="text-[#8A8070] mb-8 max-w-xl mx-auto leading-relaxed">
-              Configuration engagements typically take 2–4 weeks from kickoff to launch. Contact us for a custom quote.
+              Configuration engagements typically take 2 to 4 weeks from kickoff to launch. Contact us for a custom quote.
             </p>
             <a
               href="mailto:hello@gravitasai.xyz?subject=OpenClaw Setup Inquiry"

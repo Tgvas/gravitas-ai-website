@@ -5,7 +5,7 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/ui/
 
 export const metadata: Metadata = createPageMetadata(
   'AI Consulting',
-  'Strategic AI guidance from engineers who have built AI systems at enterprise scale. We help you identify where AI delivers ROI — and how to measure it.',
+  'Strategic AI guidance from engineers who have built AI systems at enterprise scale. We help you identify where AI delivers ROI and how to measure it.',
   '/services/ai-consulting'
 );
 
@@ -13,12 +13,12 @@ const outcomes = [
   {
     title: 'Where AI Fits Your Business',
     description:
-      'We analyze your operations to identify the highest-value automation opportunities — the ones that reduce costs, increase throughput, or improve quality without adding headcount.',
+      'We analyze your operations to identify the highest-value automation opportunities: the ones that reduce costs, increase throughput, or improve quality without adding headcount.',
   },
   {
     title: 'What to Automate First',
     description:
-      'Not everything is worth automating. We prioritize based on task volume, error rates, cost per decision, and technical feasibility — giving you a clear roadmap with an expected return on each initiative.',
+      'Not everything is worth automating. We prioritize based on task volume, error rates, cost per decision, and technical feasibility, giving you a clear roadmap with an expected return on each initiative.',
   },
   {
     title: 'How to Measure ROI',
@@ -28,7 +28,7 @@ const outcomes = [
   {
     title: 'Build vs. Buy Analysis',
     description:
-      'The AI tooling landscape is crowded. We evaluate which platforms, models, and services are right for your use case — and when building custom is worth the investment.',
+      'The AI tooling market is crowded. We evaluate which platforms, models, and services are right for your use case, and when building custom is worth the investment.',
   },
   {
     title: 'Risk & Compliance Review',
@@ -38,7 +38,7 @@ const outcomes = [
   {
     title: 'Team Readiness Assessment',
     description:
-      "Your team needs to work alongside AI agents — reviewing outputs, handling escalations, maintaining oversight. We assess readiness and create a change management plan that sticks.",
+      "Your team needs to work alongside AI agents: reviewing outputs, handling escalations, and maintaining oversight. We assess readiness and create a change management plan that sticks.",
   },
 ];
 
@@ -137,7 +137,7 @@ export default function AIConsultingPage() {
                 Strategy before spend.
               </h2>
               <p className="text-[#8A8070] leading-relaxed text-lg">
-                Our consulting engagement starts with a deep audit of your operations, data, and team. We come back with a prioritized roadmap — not a generic framework, but a specific plan for your business with expected timelines, costs, and returns. You leave with clarity on exactly what to do next.
+                Our consulting engagement starts with a deep audit of your operations, data, and team. We come back with a prioritized roadmap: not a generic framework, but a specific plan for your business with expected timelines, costs, and returns. You leave with clarity on exactly what to do next.
               </p>
             </AnimatedSection>
           </div>
@@ -203,8 +203,8 @@ export default function AIConsultingPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { step: '01', title: 'Operations Audit', desc: 'We review your workflows, data, team structure, and existing tools — looking for automation opportunities and risk areas.' },
-              { step: '02', title: 'Opportunity Mapping', desc: "We score each automation opportunity by impact, feasibility, and speed-to-value — giving you a prioritized list with the reasoning behind it." },
+              { step: '01', title: 'Operations Audit', desc: 'We review your workflows, data, team structure, and existing tools, looking for automation opportunities and risk areas.' },
+              { step: '02', title: 'Opportunity Mapping', desc: "We score each automation opportunity by impact, feasibility, and speed-to-value, and give you a prioritized list with the reasoning behind it." },
               { step: '03', title: 'Strategy Delivery', desc: "You receive a written AI strategy document: what to build, what to buy, what to skip, and why. With a 90-day action plan." },
               { step: '04', title: 'Advisory Retainer', desc: "Ongoing monthly sessions to review progress, adjust the roadmap, and provide technical guidance as you execute." },
             ].map((item) => (

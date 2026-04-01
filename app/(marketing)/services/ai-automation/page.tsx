@@ -13,7 +13,7 @@ const useCases = [
   {
     title: 'Lead Processing & Enrichment',
     description:
-      'Inbound leads automatically enriched, scored, and routed to the right rep — without anyone touching a spreadsheet.',
+      'Inbound leads automatically enriched, scored, and routed to the right rep. No spreadsheets.',
   },
   {
     title: 'Document Review & Classification',
@@ -28,7 +28,7 @@ const useCases = [
   {
     title: 'Customer Communication',
     description:
-      'First-response drafts, follow-up sequences, and escalation routing — handled by AI with your brand voice and review gates.',
+      'First-response drafts, follow-up sequences, and escalation routing handled by AI, with your brand voice and review gates.',
   },
   {
     title: 'Data Synchronization',
@@ -119,7 +119,7 @@ export default function AIAutomationPage() {
                 Your team is doing work that shouldn&apos;t need humans.
               </h2>
               <p className="text-[#8A8070] leading-relaxed text-lg">
-                Every team has tasks that are rule-based, repetitive, and high-volume — the kind that require attention but not judgment. These tasks eat hours, cause bottlenecks, and introduce errors. Most teams tolerate them because automating feels complicated. It doesn&apos;t have to be.
+                Every team has tasks that are rule-based, repetitive, and high-volume: the kind that require attention but not judgment. These tasks eat hours, cause bottlenecks, and introduce errors. Most teams tolerate them because automating feels complicated. It doesn&apos;t have to be.
               </p>
             </AnimatedSection>
 
@@ -137,7 +137,7 @@ export default function AIAutomationPage() {
                 Pipelines that run in minutes, not hours.
               </h2>
               <p className="text-[#8A8070] leading-relaxed text-lg">
-                We design and build custom AI pipelines that sit between your existing tools — no rip-and-replace, no massive migrations. Operations that took your team hours to manage run in minutes. With exception handling, audit trails, and human escalation paths built in from the start.
+                We design and build custom AI pipelines that sit between your existing tools, with no rip-and-replace, no massive migrations. Operations that took your team hours to manage run in minutes. With exception handling, audit trails, and human escalation paths built in from the start.
               </p>
             </AnimatedSection>
           </div>
@@ -201,7 +201,7 @@ export default function AIAutomationPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { step: '01', title: 'Workflow Mapping', desc: 'We document the current process — inputs, outputs, decision points, and pain points — before writing a single line of automation.' },
+              { step: '01', title: 'Workflow Mapping', desc: 'We document the current process, including inputs, outputs, decision points, and pain points, before writing a single line of automation.' },
               { step: '02', title: 'Pipeline Design', desc: 'We design the automation architecture including error handling, retry logic, escalation paths, and audit logging.' },
               { step: '03', title: 'Build & Test', desc: 'We build the pipeline in a staging environment, test with real data, and validate edge cases before touching production.' },
               { step: '04', title: 'Monitor & Maintain', desc: 'Pipelines are monitored continuously. We alert on failures, track performance metrics, and tune the automation over time.' },
