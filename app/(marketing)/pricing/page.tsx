@@ -107,8 +107,8 @@ const faqs = [
     a: "We don't offer a free trial, but every engagement starts with a strategy call where we map out what your AI operations would look like. If we're not a fit, we'll tell you — before you spend anything.",
   },
   {
-    q: 'What does "Enterprise SLA" mean?',
-    a: 'Enterprise SLA includes a contractual uptime guarantee (99.9%), response time commitments for support issues (4 hours for critical, 8 hours for high-priority), and remedies if we miss those targets. It also includes a dedicated support engineer who knows your system.',
+    q: 'What kind of support do I get?',
+    a: 'Every client gets direct access to our engineering team. No ticket queues, no outsourced support. We respond within hours, not days, because we built the system and know it inside out.',
   },
   {
     q: 'Do I need technical knowledge to get started?',

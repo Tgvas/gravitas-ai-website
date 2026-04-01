@@ -396,8 +396,8 @@ export default function HomePage() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {[
                   { label: 'US-Based Team', desc: 'All work done by our team, in the US.' },
-                  { label: 'Enterprise SLA Available', desc: 'Uptime and response guarantees for enterprise clients.' },
-                  { label: 'SOC 2 Ready', desc: 'Security posture built for enterprise compliance requirements.' },
+                  { label: 'Dedicated Support', desc: 'Direct access to our engineering team — no ticket queues.' },
+                  { label: 'Security-First Architecture', desc: 'Isolated environments, encrypted data, and full audit trails by default.' },
                 ].map((badge) => (
                   <div key={badge.label} className="border border-[#1A2535]/15 p-6">
                     <div className="w-6 h-px bg-[#C49A2A] mb-4" />
