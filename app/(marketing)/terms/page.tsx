@@ -157,8 +157,9 @@ export default function TermsPage() {
                   title: '11. Governing Law and Disputes',
                   content: (
                     <div className="space-y-4 text-[#8A8070] leading-relaxed">
-                      <p>These Terms are governed by the laws of the United States, without regard to conflict of law principles.</p>
-                      <p>Any disputes arising from these Terms or our services shall be resolved through binding arbitration administered under the rules of the American Arbitration Association, except that either party may seek injunctive relief in court for IP infringement or confidentiality breaches.</p>
+                      <p>These Terms are governed by the laws of the State of Florida and applicable United States federal law, without regard to conflict of law principles.</p>
+                      <p>Any disputes arising from these Terms or our services shall be resolved through binding arbitration administered under the rules of the American Arbitration Association, conducted in Palm Beach County, Florida, except that either party may seek injunctive relief in court for IP infringement or confidentiality breaches. Any court proceedings shall be brought exclusively in the state or federal courts located in Palm Beach County, Florida, and you consent to the jurisdiction of those courts.</p>
+                      <p>To the fullest extent permitted by law, any claim must be brought in your individual capacity and not as a plaintiff or class member in any class or representative proceeding, and any claim must be filed within one year after it arises or be permanently barred.</p>
                     </div>
                   ),
                 },
