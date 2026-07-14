@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/ui/AnimatedSection';
 import { baseMetadata } from '@/lib/metadata';
-import { WaitlistForm } from '@/components/ui/WaitlistForm';
 import { AgentNetworkIllustration } from '@/components/illustrations/AgentNetworkIllustration';
 import { RadarAnalysisIllustration } from '@/components/illustrations/RadarAnalysisIllustration';
 import { PipelineFlowIllustration } from '@/components/illustrations/PipelineFlowIllustration';
@@ -12,14 +11,39 @@ export const metadata: Metadata = {
   ...baseMetadata,
 };
 
-const services = [
+const capabilities = [
   {
-    id: 'ai-agents',
-    title: 'AI Agent Setup',
-    outcome: 'Deploy a fully operational AI agent team in days, not months.',
+    id: 'native-apps',
+    title: 'Native Mac & iOS Apps',
+    outcome: 'Apps that feel at home on Apple platforms.',
     description:
-      'We configure, test, and deploy AI agent teams using enterprise-grade orchestration. Your agents are integrated with your existing tools before they touch a single workflow.',
-    href: '/services/ai-agents',
+      'We build with native frameworks, not wrappers. Fast launch, low memory, and interfaces that follow platform conventions instead of fighting them. Rubber Duck, our dictation app for Mac, is built this way.',
+    flip: false,
+    icon: (
+      <div className="w-full aspect-[4/3] max-w-[400px]">
+        <DashboardWireframeIllustration />
+      </div>
+    ),
+  },
+  {
+    id: 'saas-products',
+    title: 'SaaS Products',
+    outcome: 'Full-stack software, from first schema to subscriptions.',
+    description:
+      'We design and build complete SaaS products: the data model, the API, the billing, and the interface. Every layer is engineered to scale with the people who use it.',
+    flip: true,
+    icon: (
+      <div className="w-full aspect-[4/3] max-w-[400px]">
+        <PipelineFlowIllustration />
+      </div>
+    ),
+  },
+  {
+    id: 'ai-features',
+    title: 'AI-Powered Features',
+    outcome: 'Practical AI, woven into the product.',
+    description:
+      'Transcription, cleanup, summarization, automation. We use AI where it makes the product genuinely better and leave it out where it would just be a demo. The intelligence serves the app, not the other way around.',
     flip: false,
     icon: (
       <div className="w-full aspect-[4/3] max-w-[400px]">
@@ -28,44 +52,15 @@ const services = [
     ),
   },
   {
-    id: 'ai-consulting',
-    title: 'AI Consulting',
-    outcome: 'Understand exactly where AI will move the needle for your business.',
+    id: 'privacy-engineering',
+    title: 'Privacy-First Engineering',
+    outcome: 'On-device wherever possible. Clear boundaries everywhere else.',
     description:
-      'Before you invest in infrastructure, you need a clear picture of what to automate, what to augment, and what to leave alone. We map your operations to the right AI strategy.',
-    href: '/services/ai-consulting',
+      'We treat trust as a feature. Rubber Duck transcribes entirely on-device, so your audio never leaves your Mac. Every product we ship is designed with the same discipline about where data lives and why.',
     flip: true,
     icon: (
       <div className="w-full aspect-[4/3] max-w-[400px]">
         <RadarAnalysisIllustration />
-      </div>
-    ),
-  },
-  {
-    id: 'ai-automation',
-    title: 'Automated Pipelines',
-    outcome: 'Eliminate the manual work that slows your team down.',
-    description:
-      'We design and build custom AI pipelines that connect your data sources, tools, and workflows. Operations that once required hours of human attention run in minutes.',
-    href: '/services/ai-automation',
-    flip: false,
-    icon: (
-      <div className="w-full aspect-[4/3] max-w-[400px]">
-        <PipelineFlowIllustration />
-      </div>
-    ),
-  },
-  {
-    id: 'openclaw-setup',
-    title: 'AI Operations Platform',
-    outcome: 'One place to manage, monitor, and scale your entire AI team.',
-    description:
-      'Built on OpenClaw, our AI operations platform gives you Kanban-style task management for agents, real-time progress tracking, and human-in-the-loop review. All in one dashboard.',
-    href: '/services/openclaw-setup',
-    flip: true,
-    icon: (
-      <div className="w-full aspect-[4/3] max-w-[400px]">
-        <DashboardWireframeIllustration />
       </div>
     ),
   },
@@ -74,23 +69,23 @@ const services = [
 const steps = [
   {
     number: '01',
-    title: 'Strategy Call',
-    description: 'We learn your business, your team, and where AI can deliver real results, not just demos.',
+    title: 'Design',
+    description: 'Every app starts as a real problem we have felt ourselves. We design the smallest product that solves it completely.',
   },
   {
     number: '02',
-    title: 'Architecture & Setup',
-    description: 'We design the right agent architecture and configure everything before any automation goes live.',
+    title: 'Build',
+    description: 'Native frameworks, test-first engineering, and production standards from the first commit. We build things that last.',
   },
   {
     number: '03',
-    title: 'Launch & Train',
-    description: "We deploy your AI team, train your staff on oversight and review, and monitor the first 30 days closely.",
+    title: 'Polish',
+    description: 'We refine every interaction until the app feels effortless. The details are not extra work. They are the work.',
   },
   {
     number: '04',
-    title: 'Scale & Optimize',
-    description: 'Once the system is proven, we expand it: more agents, broader pipelines, more value for your business.',
+    title: 'Ship & Iterate',
+    description: 'Real releases on real schedules. We ship, listen to users, and keep improving. An app is never finished, only better.',
   },
 ];
 
@@ -102,14 +97,13 @@ const orgSchema = {
   url: 'https://gravitasai.xyz',
   email: 'hello@gravitasai.xyz',
   description:
-    'Gravitas AI deploys and manages AI agent teams for businesses, handling setup, configuration, and ongoing operations.',
+    'Gravitas AI is a software studio that designs, builds, and ships SaaS products and native apps, including Rubber Duck, a dictation app for macOS.',
   founder: {
     '@type': 'Person',
     name: 'Chris Graves',
     jobTitle: 'Principal Software Engineer',
   },
   areaServed: 'US',
-  serviceType: ['AI Agent Deployment', 'AI Consulting', 'Workflow Automation', 'AI Operations'],
 };
 
 export default function HomePage() {
@@ -128,30 +122,30 @@ export default function HomePage() {
               <div className="inline-flex items-center gap-2 mb-6">
                 <div className="w-6 h-px bg-[#C49A2A]" />
                 <span className="text-[#C49A2A] text-xs uppercase tracking-widest font-medium">
-                  AI Operations
+                  Software Studio
                 </span>
               </div>
               <h1
                 className="text-[56px] lg:text-[72px] leading-[1.08] font-bold text-[#F0EDE6] mb-6"
                 style={{ fontFamily: 'var(--font-serif)' }}
               >
-                Your AI Operations Team, Professionally Deployed.
+                We Design, Build, and Ship Apps.
               </h1>
               <p className="text-lg text-[#8A8070] leading-relaxed mb-10 max-w-xl">
-                Gravitas AI deploys and manages AI agent teams for your business, handling setup, configuration, and ongoing operations so you can focus on outcomes, not infrastructure.
+                Gravitas AI is an independent software studio. We build SaaS products and native apps in-house, from first sketch to the App Store, starting with Rubber Duck, our dictation app for Mac.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="mailto:hello@gravitasai.xyz"
+                  href="/apps"
                   className="inline-flex items-center justify-center bg-[#C49A2A] text-[#0D1B2A] font-semibold px-8 py-4 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
                 >
-                  Book a Strategy Call
+                  Meet Rubber Duck
                 </a>
                 <a
-                  href="#how-it-works"
+                  href="#how-we-build"
                   className="inline-flex items-center justify-center text-[#F0EDE6] font-medium px-8 py-4 border border-[#F0EDE6]/20 hover:border-[#F0EDE6]/40 transition-colors duration-200 text-sm"
                 >
-                  See How It Works →
+                  See How We Build →
                 </a>
               </div>
             </AnimatedSection>
@@ -166,60 +160,51 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SERVICES OVERVIEW — beige */}
+      {/* WHAT WE BUILD — beige */}
       <section className="bg-[#F5F0E8] py-24 lg:py-32">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <AnimatedSection className="mb-16 lg:mb-20">
             <div className="inline-flex items-center gap-2 mb-4">
               <div className="w-6 h-px bg-[#C49A2A]" />
               <span className="text-[#C49A2A] text-xs uppercase tracking-widest font-medium">
-                What We Do
+                What We Build
               </span>
             </div>
             <h2
               className="text-4xl lg:text-5xl font-bold text-[#1A2535] leading-tight"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              What We Do
+              From Idea to the App Store.
             </h2>
           </AnimatedSection>
 
           <div className="space-y-20 lg:space-y-28">
-            {services.map((service) => (
-              <AnimatedSection key={service.id}>
+            {capabilities.map((capability) => (
+              <AnimatedSection key={capability.id}>
                 <div
                   className={`grid lg:grid-cols-2 gap-12 lg:gap-20 items-center ${
-                    service.flip ? 'lg:grid-flow-dense' : ''
+                    capability.flip ? 'lg:grid-flow-dense' : ''
                   }`}
                 >
-                  <div className={service.flip ? 'lg:col-start-2' : ''}>
-                    {service.icon}
+                  <div className={capability.flip ? 'lg:col-start-2' : ''}>
+                    {capability.icon}
                   </div>
-                  <div className={service.flip ? 'lg:col-start-1 lg:row-start-1' : ''}>
+                  <div className={capability.flip ? 'lg:col-start-1 lg:row-start-1' : ''}>
                     <p className="text-[#C49A2A] text-xs uppercase tracking-widest font-medium mb-3">
-                      Service
+                      Capability
                     </p>
                     <h3
                       className="text-3xl font-bold text-[#1A2535] mb-3 leading-tight"
                       style={{ fontFamily: 'var(--font-serif)' }}
                     >
-                      {service.title}
+                      {capability.title}
                     </h3>
                     <p className="text-lg font-medium text-[#1A2535] mb-4 leading-snug">
-                      {service.outcome}
+                      {capability.outcome}
                     </p>
-                    <p className="text-[#8A8070] leading-relaxed mb-6">
-                      {service.description}
+                    <p className="text-[#8A8070] leading-relaxed">
+                      {capability.description}
                     </p>
-                    <a
-                      href={service.href}
-                      className="inline-flex items-center text-sm font-medium text-[#1A2535] hover:text-[#C49A2A] transition-colors duration-200 group"
-                    >
-                      Learn More
-                      <span className="ml-1 group-hover:translate-x-1 transition-transform duration-200">
-                        →
-                      </span>
-                    </a>
                   </div>
                 </div>
               </AnimatedSection>
@@ -228,7 +213,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* PLATFORM TEASER — navy */}
+      {/* RUBBER DUCK FEATURE — navy */}
       <section className="bg-[#0D1B2A] py-24 lg:py-32">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -236,64 +221,74 @@ export default function HomePage() {
               <div className="inline-flex items-center gap-2 mb-4">
                 <div className="w-6 h-px bg-[#C49A2A]" />
                 <span className="text-[#C49A2A] text-xs uppercase tracking-widest font-medium">
-                  Platform
+                  Our First App
                 </span>
               </div>
               <h2
                 className="text-4xl lg:text-5xl font-bold text-[#F0EDE6] leading-tight mb-6"
                 style={{ fontFamily: 'var(--font-serif)' }}
               >
-                Manage Your AI Team Like a Pro
+                Meet Rubber Duck.
               </h2>
               <p className="text-[#8A8070] leading-relaxed mb-8 text-lg">
-                A project management platform built for AI operations. Assign tasks to agents, track progress, review outputs, and keep humans in the loop. All in one place.
+                Push-to-talk dictation for Mac. Hold a key, speak, release. Rubber Duck transcribes entirely on-device, cleans your words up with AI, and types them into whatever app you are using. Your audio never leaves your Mac.
               </p>
-              <WaitlistForm layout="inline" theme="gold-on-navy" />
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://getrubberduck.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-[#C49A2A] text-[#0D1B2A] font-semibold px-8 py-4 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
+                >
+                  Get Rubber Duck
+                </a>
+                <a
+                  href="/apps"
+                  className="inline-flex items-center justify-center text-[#F0EDE6] font-medium px-8 py-4 border border-[#F0EDE6]/20 hover:border-[#F0EDE6]/40 transition-colors duration-200 text-sm"
+                >
+                  Learn More →
+                </a>
+              </div>
             </AnimatedSection>
 
-            {/* Platform UI mockup */}
+            {/* Dictation UI mockup */}
             <AnimatedSection delay={0.2} className="hidden lg:block">
               <div className="border border-[#F0EDE6]/10 bg-[#1A2535] p-6">
                 {/* Mock header bar */}
-                <div className="flex items-center gap-2 mb-4 pb-4 border-b border-[#F0EDE6]/10">
-                  <div className="w-2 h-2 rounded-full bg-[#C49A2A]" />
-                  <div className="h-4 w-24 bg-[#F0EDE6]/10" />
-                  <div className="ml-auto h-4 w-16 bg-[#F0EDE6]/5" />
+                <div className="flex items-center gap-2 mb-6 pb-4 border-b border-[#F0EDE6]/10">
+                  <div className="flex gap-1.5">
+                    <div className="w-2.5 h-2.5 rounded-full bg-[#F0EDE6]/20" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-[#F0EDE6]/20" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-[#F0EDE6]/20" />
+                  </div>
+                  <div className="h-4 w-28 bg-[#F0EDE6]/10" />
+                  <div className="ml-auto flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-[#C49A2A]" />
+                    <span className="text-[#8A8070] text-xs">Listening</span>
+                  </div>
                 </div>
-                {/* Mock kanban */}
-                <div className="grid grid-cols-3 gap-3">
-                  {['To Do', 'In Progress', 'Review'].map((col, ci) => (
-                    <div key={col} className="space-y-2">
-                      <div className="flex items-center gap-1 mb-2">
-                        <div
-                          className="w-1.5 h-1.5"
-                          style={{
-                            background: ci === 1 ? '#C49A2A' : '#F0EDE640',
-                          }}
-                        />
-                        <span className="text-[#8A8070] text-xs">{col}</span>
-                      </div>
-                      {Array.from({ length: ci === 1 ? 3 : 2 }).map((_, i) => (
-                        <div
-                          key={i}
-                          className="p-2 border"
-                          style={{
-                            borderColor:
-                              ci === 1 && i === 0
-                                ? 'rgba(196,154,42,0.3)'
-                                : 'rgba(240,237,230,0.08)',
-                            background:
-                              ci === 1 && i === 0
-                                ? 'rgba(196,154,42,0.05)'
-                                : 'rgba(240,237,230,0.03)',
-                          }}
-                        >
-                          <div className="h-2 w-3/4 bg-[#F0EDE6]/20 mb-1.5" />
-                          <div className="h-2 w-1/2 bg-[#F0EDE6]/10" />
-                        </div>
-                      ))}
-                    </div>
+                {/* Mock waveform */}
+                <div className="flex items-end justify-center gap-1.5 h-20 mb-6">
+                  {[8, 20, 34, 52, 40, 64, 48, 72, 56, 68, 44, 58, 36, 48, 26, 38, 16, 24, 10].map((h, i) => (
+                    <div
+                      key={i}
+                      className="w-1.5"
+                      style={{
+                        height: `${h}%`,
+                        background: i % 4 === 1 ? 'rgba(196,154,42,0.7)' : 'rgba(240,237,230,0.25)',
+                      }}
+                    />
                   ))}
+                </div>
+                {/* Mock transcribed text */}
+                <div className="space-y-2.5 border-t border-[#F0EDE6]/10 pt-5">
+                  <div className="h-2.5 w-full bg-[#F0EDE6]/15" />
+                  <div className="h-2.5 w-5/6 bg-[#F0EDE6]/15" />
+                  <div className="h-2.5 w-2/3 bg-[#F0EDE6]/10" />
+                  <div className="flex items-center gap-2 pt-2">
+                    <div className="w-1.5 h-1.5 bg-[#C49A2A]" />
+                    <span className="text-[#8A8070] text-xs">Cleaned up and pasted</span>
+                  </div>
                 </div>
               </div>
             </AnimatedSection>
@@ -315,7 +310,7 @@ export default function HomePage() {
               className="text-4xl lg:text-5xl font-bold text-[#1A2535] leading-tight"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              Built by Engineers. Run for Business.
+              Built by Engineers. Shipped With Care.
             </h2>
           </AnimatedSection>
 
@@ -334,7 +329,7 @@ export default function HomePage() {
                     </h3>
                     <p className="text-[#8A8070] text-sm mb-4">Founder & Principal Software Engineer</p>
                     <p className="text-[#1A2535] leading-relaxed">
-                      Chris has spent years building AI agent systems for enterprise organizations, working across the full stack from architecture to deployment. He founded Gravitas AI to bring that same engineering rigor to businesses of every size.
+                      Chris has spent years building software and AI systems for enterprise organizations, working across the full stack from architecture to deployment. He founded Gravitas AI to ship products of his own with that same engineering rigor.
                     </p>
                   </div>
                 </div>
@@ -344,9 +339,9 @@ export default function HomePage() {
             <AnimatedSection delay={0.15}>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {[
-                  { label: 'US-Based Team', desc: 'All work done by our team, in the US.' },
-                  { label: 'Dedicated Support', desc: 'Direct access to our engineering team. No ticket queues.' },
-                  { label: 'Security-First Architecture', desc: 'Isolated environments, encrypted data, and full audit trails by default.' },
+                  { label: 'Built In-House', desc: 'Design, engineering, and support under one roof. No detail is someone else’s problem.' },
+                  { label: 'Privacy-First', desc: 'On-device processing wherever possible. Your data is yours.' },
+                  { label: 'Direct Support', desc: 'Questions go straight to the people who built the app. No ticket queues.' },
                 ].map((badge) => (
                   <div key={badge.label} className="border border-[#1A2535]/15 p-6">
                     <div className="w-6 h-px bg-[#C49A2A] mb-4" />
@@ -368,20 +363,20 @@ export default function HomePage() {
               className="text-3xl lg:text-4xl font-bold text-[#F0EDE6] mb-6"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              Ready to operationalize AI in your business?
+              Questions about our apps? We read every message.
             </h2>
             <a
               href="mailto:hello@gravitasai.xyz"
               className="inline-flex items-center justify-center bg-[#C49A2A] text-[#0D1B2A] font-semibold px-10 py-4 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
             >
-              Book a Strategy Call
+              Get in Touch
             </a>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* HOW IT WORKS — beige */}
-      <section id="how-it-works" className="bg-[#F5F0E8] py-24 lg:py-32">
+      {/* HOW WE BUILD — beige */}
+      <section id="how-we-build" className="bg-[#F5F0E8] py-24 lg:py-32">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <AnimatedSection className="mb-16 lg:mb-20">
             <div className="inline-flex items-center gap-2 mb-4">
@@ -394,7 +389,7 @@ export default function HomePage() {
               className="text-4xl lg:text-5xl font-bold text-[#1A2535] leading-tight"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              How Gravitas AI Works
+              How Gravitas AI Builds
             </h2>
           </AnimatedSection>
 
