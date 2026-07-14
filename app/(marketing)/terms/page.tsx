@@ -9,7 +9,7 @@ export const metadata: Metadata = createPageMetadata(
 );
 
 export default function TermsPage() {
-  const lastUpdated = 'January 1, 2026';
+  const lastUpdated = 'July 13, 2026';
 
   return (
     <>
@@ -166,7 +166,7 @@ export default function TermsPage() {
                   title: '12. Changes to Terms',
                   content: (
                     <p className="text-[#8A8070] leading-relaxed">
-                      We may update these Terms from time to time. We will notify you of material changes by posting the updated Terms on our website with a new effective date and, for significant changes, by email notification to active clients. Continued use of our services after the effective date constitutes acceptance of the updated Terms.
+                      We may update these Terms from time to time. We will notify you of material changes by posting the updated Terms on our website with a new effective date and, for significant changes, by email notification to users we have an email address for. Continued use of our services after the effective date constitutes acceptance of the updated Terms.
                     </p>
                   ),
                 },

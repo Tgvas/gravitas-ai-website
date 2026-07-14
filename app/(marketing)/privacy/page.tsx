@@ -9,7 +9,7 @@ export const metadata: Metadata = createPageMetadata(
 );
 
 export default function PrivacyPage() {
-  const lastUpdated = 'January 1, 2026';
+  const lastUpdated = 'July 13, 2026';
 
   return (
     <>
@@ -40,7 +40,7 @@ export default function PrivacyPage() {
                   Gravitas AI LLC (&ldquo;Gravitas AI,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates gravitasai.xyz and builds software products, including the Rubber Duck app for macOS. This Privacy Policy explains how we collect, use, share, and protect information about you when you use our website or products.
                 </p>
                 <p className="text-[#8A8070] leading-relaxed">
-                  By using our website or engaging our services, you agree to the collection and use of information in accordance with this policy.
+                  By using our website or products, you agree to the collection and use of information in accordance with this policy.
                 </p>
               </div>
 
@@ -180,7 +180,7 @@ export default function PrivacyPage() {
                   title: '9. Changes to This Policy',
                   content: (
                     <p className="text-[#8A8070] leading-relaxed">
-                      We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy on this page with an updated date. For material changes, we will provide additional notice (such as email notification if you are a client). We encourage you to review this policy periodically.
+                      We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy on this page with an updated date. For material changes, we will provide additional notice (such as email notification if we have your email address). We encourage you to review this policy periodically.
                     </p>
                   ),
                 },
