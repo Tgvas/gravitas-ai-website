@@ -56,7 +56,7 @@ const capabilities = [
     title: 'Privacy-First Engineering',
     outcome: 'On-device wherever possible. Clear boundaries everywhere else.',
     description:
-      'We treat trust as a feature. Rubber Duck transcribes entirely on-device, so your audio never leaves your Mac. Every product we ship is designed with the same discipline about where data lives and why.',
+      'We treat trust as a feature. We process data on-device wherever possible and draw clear boundaries everywhere else. Every product we ship is designed with the same discipline about where data lives and why.',
     flip: true,
     icon: (
       <div className="w-full aspect-[4/3] max-w-[400px]">
@@ -98,11 +98,6 @@ const orgSchema = {
   email: 'hello@gravitasai.xyz',
   description:
     'Gravitas AI is a software studio that designs, builds, and ships SaaS products and native apps, including Rubber Duck, a dictation app for macOS.',
-  founder: {
-    '@type': 'Person',
-    name: 'Chris Graves',
-    jobTitle: 'Principal Software Engineer',
-  },
   areaServed: 'US',
 };
 
@@ -132,14 +127,14 @@ export default function HomePage() {
                 We Design, Build, and Ship Apps.
               </h1>
               <p className="text-lg text-[#8A8070] leading-relaxed mb-10 max-w-xl">
-                Gravitas AI is an independent software studio. We build SaaS products and native apps in-house, from first sketch to the App Store, starting with Rubber Duck, our dictation app for Mac.
+                Gravitas AI is an independent software studio. We build SaaS products and native apps in-house, from first sketch to the App Store.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="/apps"
                   className="inline-flex items-center justify-center bg-[#C49A2A] text-[#0D1B2A] font-semibold px-8 py-4 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
                 >
-                  Meet Rubber Duck
+                  See Our Apps
                 </a>
                 <a
                   href="#how-we-build"
@@ -213,86 +208,66 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* RUBBER DUCK FEATURE — navy */}
+      {/* OUR APPS — navy */}
       <section className="bg-[#0D1B2A] py-24 lg:py-32">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <AnimatedSection>
-              <div className="inline-flex items-center gap-2 mb-4">
-                <div className="w-6 h-px bg-[#C49A2A]" />
-                <span className="text-[#C49A2A] text-xs uppercase tracking-widest font-medium">
-                  Our First App
-                </span>
-              </div>
-              <h2
-                className="text-4xl lg:text-5xl font-bold text-[#F0EDE6] leading-tight mb-6"
-                style={{ fontFamily: 'var(--font-serif)' }}
-              >
-                Meet Rubber Duck.
-              </h2>
-              <p className="text-[#8A8070] leading-relaxed mb-8 text-lg">
-                Push-to-talk dictation for Mac. Hold a key, speak, release. Rubber Duck transcribes entirely on-device, cleans your words up with AI, and types them into whatever app you are using. Your audio never leaves your Mac.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+          <AnimatedSection className="mb-16">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <div className="w-6 h-px bg-[#C49A2A]" />
+              <span className="text-[#C49A2A] text-xs uppercase tracking-widest font-medium">
+                Our Apps
+              </span>
+            </div>
+            <h2
+              className="text-4xl lg:text-5xl font-bold text-[#F0EDE6] leading-tight mb-6"
+              style={{ fontFamily: 'var(--font-serif)' }}
+            >
+              Products We Build and Maintain
+            </h2>
+            <p className="text-[#8A8070] leading-relaxed text-lg max-w-2xl">
+              Everything we ship is designed, engineered, and supported in-house. Here is what is live today, with more in development.
+            </p>
+          </AnimatedSection>
+
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <StaggerItem>
+              <div className="border border-[#F0EDE6]/10 p-8 h-full">
+                <div className="w-6 h-px bg-[#C49A2A] mb-5" />
+                <h3
+                  className="text-xl font-bold text-[#F0EDE6] mb-3"
+                  style={{ fontFamily: 'var(--font-serif)' }}
+                >
+                  Rubber Duck
+                </h3>
+                <p className="text-[#8A8070] leading-relaxed mb-6">
+                  Push-to-talk dictation for Mac. On-device transcription, AI cleanup, and text typed straight into any app.
+                </p>
                 <a
                   href="https://getrubberduck.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center bg-[#C49A2A] text-[#0D1B2A] font-semibold px-8 py-4 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
+                  className="inline-flex items-center text-sm font-medium text-[#F0EDE6] hover:text-[#C49A2A] transition-colors duration-200 group"
                 >
-                  Get Rubber Duck
-                </a>
-                <a
-                  href="/apps"
-                  className="inline-flex items-center justify-center text-[#F0EDE6] font-medium px-8 py-4 border border-[#F0EDE6]/20 hover:border-[#F0EDE6]/40 transition-colors duration-200 text-sm"
-                >
-                  Learn More →
+                  getrubberduck.com
+                  <span className="ml-1 group-hover:translate-x-1 transition-transform duration-200">→</span>
                 </a>
               </div>
-            </AnimatedSection>
-
-            {/* Dictation UI mockup */}
-            <AnimatedSection delay={0.2} className="hidden lg:block">
-              <div className="border border-[#F0EDE6]/10 bg-[#1A2535] p-6">
-                {/* Mock header bar */}
-                <div className="flex items-center gap-2 mb-6 pb-4 border-b border-[#F0EDE6]/10">
-                  <div className="flex gap-1.5">
-                    <div className="w-2.5 h-2.5 rounded-full bg-[#F0EDE6]/20" />
-                    <div className="w-2.5 h-2.5 rounded-full bg-[#F0EDE6]/20" />
-                    <div className="w-2.5 h-2.5 rounded-full bg-[#F0EDE6]/20" />
-                  </div>
-                  <div className="h-4 w-28 bg-[#F0EDE6]/10" />
-                  <div className="ml-auto flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-[#C49A2A]" />
-                    <span className="text-[#8A8070] text-xs">Listening</span>
-                  </div>
-                </div>
-                {/* Mock waveform */}
-                <div className="flex items-end justify-center gap-1.5 h-20 mb-6">
-                  {[8, 20, 34, 52, 40, 64, 48, 72, 56, 68, 44, 58, 36, 48, 26, 38, 16, 24, 10].map((h, i) => (
-                    <div
-                      key={i}
-                      className="w-1.5"
-                      style={{
-                        height: `${h}%`,
-                        background: i % 4 === 1 ? 'rgba(196,154,42,0.7)' : 'rgba(240,237,230,0.25)',
-                      }}
-                    />
-                  ))}
-                </div>
-                {/* Mock transcribed text */}
-                <div className="space-y-2.5 border-t border-[#F0EDE6]/10 pt-5">
-                  <div className="h-2.5 w-full bg-[#F0EDE6]/15" />
-                  <div className="h-2.5 w-5/6 bg-[#F0EDE6]/15" />
-                  <div className="h-2.5 w-2/3 bg-[#F0EDE6]/10" />
-                  <div className="flex items-center gap-2 pt-2">
-                    <div className="w-1.5 h-1.5 bg-[#C49A2A]" />
-                    <span className="text-[#8A8070] text-xs">Cleaned up and pasted</span>
-                  </div>
-                </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="border border-[#F0EDE6]/10 p-8 h-full">
+                <div className="w-6 h-px bg-[#F0EDE6]/20 mb-5" />
+                <h3
+                  className="text-xl font-bold text-[#8A8070] mb-3"
+                  style={{ fontFamily: 'var(--font-serif)' }}
+                >
+                  In Development
+                </h3>
+                <p className="text-[#8A8070] leading-relaxed">
+                  More apps are in the works. We announce products when they are ready to use, not before.
+                </p>
               </div>
-            </AnimatedSection>
-          </div>
+            </StaggerItem>
+          </StaggerContainer>
         </div>
       </section>
 
@@ -307,51 +282,31 @@ export default function HomePage() {
               </span>
             </div>
             <h2
-              className="text-4xl lg:text-5xl font-bold text-[#1A2535] leading-tight"
+              className="text-4xl lg:text-5xl font-bold text-[#1A2535] leading-tight mb-6"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              Built by Engineers. Shipped With Care.
+              An Independent Software Studio.
             </h2>
+            <p className="text-[#8A8070] leading-relaxed text-lg max-w-2xl">
+              Gravitas AI LLC builds its own products with enterprise engineering discipline. Small by design, opinionated about quality, and accountable for everything we ship.
+            </p>
           </AnimatedSection>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            <AnimatedSection>
-              <div className="border border-[#1A2535]/15 p-8">
-                <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 bg-[#0D1B2A] flex-shrink-0 flex items-center justify-center">
-                    <span className="text-[#C49A2A] font-bold text-xl" style={{ fontFamily: 'var(--font-serif)' }}>
-                      CG
-                    </span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-[#1A2535] mb-1" style={{ fontFamily: 'var(--font-serif)' }}>
-                      Chris Graves
-                    </h3>
-                    <p className="text-[#8A8070] text-sm mb-4">Founder & Principal Software Engineer</p>
-                    <p className="text-[#1A2535] leading-relaxed">
-                      Chris has spent years building software and AI systems for enterprise organizations, working across the full stack from architecture to deployment. He founded Gravitas AI to ship products of his own with that same engineering rigor.
-                    </p>
-                  </div>
+          <AnimatedSection delay={0.15}>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {[
+                { label: 'Built In-House', desc: 'Design, engineering, and support under one roof. No detail is someone else’s problem.' },
+                { label: 'Privacy-First', desc: 'On-device processing wherever possible. Your data is yours.' },
+                { label: 'Direct Support', desc: 'Questions go straight to the people who built the app. No ticket queues.' },
+              ].map((badge) => (
+                <div key={badge.label} className="border border-[#1A2535]/15 p-6">
+                  <div className="w-6 h-px bg-[#C49A2A] mb-4" />
+                  <h4 className="text-sm font-semibold text-[#1A2535] mb-2">{badge.label}</h4>
+                  <p className="text-xs text-[#8A8070] leading-relaxed">{badge.desc}</p>
                 </div>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.15}>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                {[
-                  { label: 'Built In-House', desc: 'Design, engineering, and support under one roof. No detail is someone else’s problem.' },
-                  { label: 'Privacy-First', desc: 'On-device processing wherever possible. Your data is yours.' },
-                  { label: 'Direct Support', desc: 'Questions go straight to the people who built the app. No ticket queues.' },
-                ].map((badge) => (
-                  <div key={badge.label} className="border border-[#1A2535]/15 p-6">
-                    <div className="w-6 h-px bg-[#C49A2A] mb-4" />
-                    <h4 className="text-sm font-semibold text-[#1A2535] mb-2">{badge.label}</h4>
-                    <p className="text-xs text-[#8A8070] leading-relaxed">{badge.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </AnimatedSection>
-          </div>
+              ))}
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 

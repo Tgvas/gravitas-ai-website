@@ -4,7 +4,7 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/ui/
 
 export const metadata: Metadata = createPageMetadata(
   'Our Apps',
-  'The apps we build at Gravitas AI, starting with Rubber Duck: push-to-talk dictation for Mac with on-device transcription and AI cleanup.',
+  'The apps we build at Gravitas AI, including Rubber Duck: push-to-talk dictation for Mac with on-device transcription and AI cleanup.',
   '/apps'
 );
 
@@ -73,7 +73,7 @@ export default function AppsPage() {
               <div className="inline-flex items-center gap-2 mb-6">
                 <div className="w-6 h-px bg-[#C49A2A]" />
                 <span className="text-[#C49A2A] text-xs uppercase tracking-widest font-medium">
-                  Our First App
+                  Our Apps
                 </span>
               </div>
               <h1
@@ -223,7 +223,7 @@ export default function AppsPage() {
                 &ldquo;You think faster than you type. Your Mac should keep up.&rdquo;
               </blockquote>
               <p className="text-[#8A8070] leading-relaxed text-lg mb-10">
-                Rubber Duck started as a tool we built for ourselves and used every day. It became our first product because it earned it. Every Gravitas AI app will clear the same bar.
+                Rubber Duck started as a tool we built for ourselves and used every day. It became a product because it earned it. Every Gravitas AI app has to clear the same bar.
               </p>
               <a
                 href="https://getrubberduck.com"
@@ -242,7 +242,7 @@ export default function AppsPage() {
       <section className="bg-[#F5F0E8] py-16">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <p className="text-[#8A8070] mb-4">More apps are in the works. Rubber Duck is just the beginning.</p>
+            <p className="text-[#8A8070] mb-4">More apps are in the works. We announce products when they are ready to use.</p>
             <a
               href="/contact"
               className="inline-flex items-center text-sm font-medium text-[#1A2535] hover:text-[#C49A2A] transition-colors"

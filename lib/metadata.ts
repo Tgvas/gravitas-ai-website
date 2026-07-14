@@ -6,7 +6,7 @@ export const siteConfig = {
   name: 'Gravitas AI',
   url: baseUrl,
   description:
-    'Gravitas AI is a software studio that designs, builds, and ships SaaS products and native apps. Our first app, Rubber Duck, turns speech into clean, polished text on your Mac.',
+    'Gravitas AI is a software studio that designs, builds, and ships SaaS products and native apps, built in-house with enterprise engineering discipline.',
   email: 'hello@gravitasai.xyz',
   linkedin: 'https://linkedin.com/company/gravitas-ai',
   github: 'https://github.com/gravitasai',

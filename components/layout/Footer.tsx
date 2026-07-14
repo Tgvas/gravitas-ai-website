@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Linkedin, Github } from 'lucide-react'
+import { Linkedin } from 'lucide-react'
 
 const footerLinks = {
   Company: [
@@ -73,17 +73,6 @@ export function Footer() {
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
-              </a>
-              <a
-                href="https://github.com/Christopher-Graves"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: 'rgba(240,237,230,0.5)', transition: 'color 150ms' }}
-                onMouseEnter={e => (e.currentTarget.style.color = '#C49A2A')}
-                onMouseLeave={e => (e.currentTarget.style.color = 'rgba(240,237,230,0.5)')}
-                aria-label="GitHub"
-              >
-                <Github size={20} />
               </a>
             </div>
           </div>

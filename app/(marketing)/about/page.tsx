@@ -4,7 +4,7 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/ui/
 
 export const metadata: Metadata = createPageMetadata(
   'About',
-  'Gravitas AI is a software studio founded by Chris Graves, a Principal Software Engineer. We design, build, and ship SaaS products and native apps in-house.',
+  'Gravitas AI is an independent software studio. We design, build, and ship SaaS products and native apps in-house.',
   '/about'
 );
 
@@ -12,7 +12,7 @@ const values = [
   {
     title: 'Build What We Use',
     description:
-      'Every app starts as a tool we wanted for ourselves. If we would not use it every day, we do not ship it. Rubber Duck earned its place as our first product that way.',
+      'Every app starts as a tool we wanted for ourselves. If we would not use it every day, we do not ship it. Every product in our lineup earned its place that way.',
   },
   {
     title: 'Engineering Rigor',
@@ -31,19 +31,6 @@ const values = [
   },
 ];
 
-const personSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Chris Graves',
-  jobTitle: 'Principal Software Engineer',
-  worksFor: {
-    '@type': 'Organization',
-    name: 'Gravitas AI LLC',
-  },
-  description:
-    'Founder of Gravitas AI and maker of Rubber Duck, a dictation app for macOS. Background in building production software and AI systems for enterprise organizations.',
-};
-
 const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -52,10 +39,6 @@ const orgSchema = {
   url: 'https://gravitasai.xyz',
   email: 'hello@gravitasai.xyz',
   foundingDate: '2026',
-  founder: {
-    '@type': 'Person',
-    name: 'Chris Graves',
-  },
   description:
     'Gravitas AI is a software studio that designs, builds, and ships SaaS products and native apps, including Rubber Duck, a dictation app for macOS.',
 };
@@ -65,7 +48,7 @@ export default function AboutPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([personSchema, orgSchema]) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
       />
 
       {/* Hero */}
@@ -110,13 +93,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[#8A8070] leading-relaxed">
                 <p>
-                  Gravitas AI grew out of hands-on experience building software and AI systems in enterprise environments. Chris Graves works as a Principal Software Engineer, building systems that hold up at scale under real business constraints.
+                  Gravitas AI grew out of hands-on experience building software and AI systems in enterprise environments, where things have to hold up at scale under real business constraints.
                 </p>
                 <p>
                   The studio exists to turn that experience into products of our own. Instead of consulting on other people&apos;s software, we design, build, and ship our own apps, and we hold them to the same standards an enterprise deployment would demand.
                 </p>
                 <p>
-                  The first of those apps is Rubber Duck, a push-to-talk dictation app for Mac. It started as a tool we built for ourselves and used every day. More apps are on the way.
+                  Among those apps is Rubber Duck, a push-to-talk dictation app for Mac. It started as a tool we built for ourselves and used every day. More apps are on the way.
                 </p>
               </div>
             </AnimatedSection>
@@ -154,69 +137,35 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Founder */}
+      {/* Studio */}
       <section className="bg-[#0D1B2A] py-24 lg:py-32">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-          <AnimatedSection className="mb-16">
+          <AnimatedSection className="mb-12">
             <div className="inline-flex items-center gap-2 mb-4">
               <div className="w-6 h-px bg-[#C49A2A]" />
               <span className="text-[#C49A2A] text-xs uppercase tracking-widest font-medium">
-                Founder
+                The Studio
               </span>
             </div>
             <h2
               className="text-4xl font-bold text-[#F0EDE6] leading-tight"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              The person behind the products.
+              Small by design, serious about craft.
             </h2>
           </AnimatedSection>
 
-          <div className="grid lg:grid-cols-3 gap-12">
-            <AnimatedSection className="lg:col-span-1">
-              <div className="border border-[#F0EDE6]/10 p-8">
-                <div className="w-20 h-20 bg-[#1A2535] border border-[#C49A2A]/30 flex items-center justify-center mb-6">
-                  <span className="text-[#C49A2A] text-2xl font-bold" style={{ fontFamily: 'var(--font-serif)' }}>
-                    CG
-                  </span>
-                </div>
-                <h3
-                  className="text-2xl font-bold text-[#F0EDE6] mb-2"
-                  style={{ fontFamily: 'var(--font-serif)' }}
-                >
-                  Chris Graves
-                </h3>
-                <p className="text-[#C49A2A] text-sm font-medium mb-6">Founder & Principal Software Engineer</p>
-                <div className="space-y-2">
-                  {[
-                    'Principal Software Engineer',
-                    'Enterprise AI Systems',
-                    'Native macOS Development',
-                    'Maker of Rubber Duck',
-                    'US-Based',
-                  ].map((tag) => (
-                    <div key={tag} className="flex items-center gap-2">
-                      <div className="w-1 h-1 bg-[#C49A2A]" />
-                      <span className="text-sm text-[#8A8070]">{tag}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.15} className="lg:col-span-2">
+          <div className="max-w-3xl">
+            <AnimatedSection delay={0.15}>
               <div className="space-y-5 text-[#8A8070] leading-relaxed">
                 <p className="text-lg text-[#F0EDE6]">
-                  Chris Graves is a Principal Software Engineer who builds software and AI systems for a living, and apps because he cannot help it.
+                  Gravitas AI is a US-based, engineer-run studio. No layers, no handoffs, no outsourcing.
                 </p>
                 <p>
-                  His background spans the full engineering stack: from AI model selection and prompt engineering to distributed systems, API design, and production operations. He brings enterprise engineering discipline to every product the studio ships.
+                  Our background spans the full engineering stack: from AI model selection and prompt engineering to distributed systems, API design, and production operations. That enterprise discipline goes into every product the studio ships.
                 </p>
                 <p>
-                  Chris founded Gravitas AI to build products of his own. The first is Rubber Duck, a push-to-talk dictation app for Mac that transcribes on-device and cleans up your words with AI. It began as a tool he built for himself and used daily, which is exactly the bar every future Gravitas AI app has to clear.
-                </p>
-                <p>
-                  He believes the best software respects its users: fast, private, and honest about what it does with your data. Gravitas AI exists to ship more of it.
+                  We believe the best software respects its users: fast, private, and honest about what it does with your data. Gravitas AI exists to ship more of it.
                 </p>
               </div>
             </AnimatedSection>
@@ -269,18 +218,16 @@ export default function AboutPage() {
               className="text-3xl lg:text-4xl font-bold text-[#F0EDE6] mb-6"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              Try the first thing we shipped.
+              See what we build.
             </h2>
             <p className="text-[#8A8070] mb-8 max-w-xl mx-auto leading-relaxed">
-              Rubber Duck is the fastest way to see what we mean by software worth keeping.
+              Our apps are the fastest way to see what we mean by software worth keeping.
             </p>
             <a
-              href="https://getrubberduck.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/apps"
               className="inline-flex items-center justify-center bg-[#C49A2A] text-[#0D1B2A] font-semibold px-10 py-4 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
             >
-              Get Rubber Duck
+              See Our Apps
             </a>
           </AnimatedSection>
         </div>
