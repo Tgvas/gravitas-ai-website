@@ -1,22 +1,15 @@
 'use client'
 
 import Link from 'next/link'
-import { Linkedin, Github } from 'lucide-react'
 
 const footerLinks = {
   Company: [
     { label: 'About', href: '/about' },
     { label: 'Contact', href: '/contact' },
   ],
-  Services: [
-    { label: 'AI Agent Setup', href: '/services/ai-agents' },
-    { label: 'AI Consulting', href: '/services/ai-consulting' },
-    { label: 'Automated Pipelines', href: '/services/ai-automation' },
-    { label: 'OpenClaw Setup', href: '/services/openclaw-setup' },
-  ],
-  Platform: [
-    { label: 'Platform Overview', href: '/platform' },
-    { label: 'Pricing', href: '/pricing' },
+  Apps: [
+    { label: 'Our Apps', href: '/apps' },
+    { label: 'Rubber Duck', href: 'https://getrubberduck.com' },
   ],
   Legal: [
     { label: 'Privacy Policy', href: '/privacy' },
@@ -65,32 +58,8 @@ export function Footer() {
                 color: 'rgba(240,237,230,0.6)',
                 maxWidth: '220px',
               }}>
-                Professional AI operations teams for enterprise businesses.
+                An independent software studio building SaaS products and native apps.
               </p>
-            </div>
-            <div style={{ display: 'flex', gap: '16px', marginTop: '24px' }}>
-              <a
-                href="https://www.linkedin.com/company/gravitas-ai-llc"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: 'rgba(240,237,230,0.5)', transition: 'color 150ms' }}
-                onMouseEnter={e => (e.currentTarget.style.color = '#C49A2A')}
-                onMouseLeave={e => (e.currentTarget.style.color = 'rgba(240,237,230,0.5)')}
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={20} />
-              </a>
-              <a
-                href="https://github.com/Christopher-Graves"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: 'rgba(240,237,230,0.5)', transition: 'color 150ms' }}
-                onMouseEnter={e => (e.currentTarget.style.color = '#C49A2A')}
-                onMouseLeave={e => (e.currentTarget.style.color = 'rgba(240,237,230,0.5)')}
-                aria-label="GitHub"
-              >
-                <Github size={20} />
-              </a>
             </div>
           </div>
 

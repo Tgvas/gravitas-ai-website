@@ -9,7 +9,7 @@ export const metadata: Metadata = createPageMetadata(
 );
 
 export default function TermsPage() {
-  const lastUpdated = 'January 1, 2026';
+  const lastUpdated = 'July 13, 2026';
 
   return (
     <>
@@ -49,8 +49,8 @@ export default function TermsPage() {
                   title: '1. Services',
                   content: (
                     <div className="space-y-4 text-[#8A8070] leading-relaxed">
-                      <p>Gravitas AI provides AI operations services including AI agent deployment, AI consulting, workflow automation, and the AI operations platform. The specific services provided to you are governed by your service agreement or statement of work (&ldquo;SOW&rdquo;).</p>
-                      <p>We reserve the right to modify, suspend, or discontinue any service at any time with reasonable notice. We will not be liable to you or any third party for any modification, suspension, or discontinuation of services.</p>
+                      <p>Gravitas AI builds and distributes software products, including SaaS applications and native apps such as Rubber Duck for macOS. Individual products may have their own license terms or end-user license agreements, which apply in addition to these Terms.</p>
+                      <p>We reserve the right to modify, suspend, or discontinue any product or service at any time with reasonable notice. We will not be liable to you or any third party for any modification, suspension, or discontinuation.</p>
                     </div>
                   ),
                 },
@@ -58,7 +58,7 @@ export default function TermsPage() {
                   title: '2. Accounts and Access',
                   content: (
                     <div className="space-y-4 text-[#8A8070] leading-relaxed">
-                      <p>Access to certain services requires an account or active service agreement. You are responsible for maintaining the confidentiality of your access credentials and for all activities that occur under your account.</p>
+                      <p>Access to certain products or features may require an account. You are responsible for maintaining the confidentiality of your access credentials and for all activities that occur under your account.</p>
                       <p>You agree to provide accurate, current, and complete information when engaging our services and to update such information as needed. You must notify us immediately of any unauthorized use of your account.</p>
                     </div>
                   ),
@@ -67,10 +67,8 @@ export default function TermsPage() {
                   title: '3. Payment and Billing',
                   content: (
                     <div className="space-y-4 text-[#8A8070] leading-relaxed">
-                      <p><strong className="text-[#1A2535] font-semibold">Monthly plans:</strong> Monthly subscription fees are billed in advance on a monthly basis. You authorize us to charge your payment method on the billing date each month.</p>
-                      <p><strong className="text-[#1A2535] font-semibold">Annual plans:</strong> Annual subscription fees are billed in advance for the full year. Annual plans are non-refundable after the first 30 days.</p>
-                      <p><strong className="text-[#1A2535] font-semibold">Setup services:</strong> Setup service fees are quoted and agreed upon in your SOW. Payment terms for setup services are as specified in your SOW, typically 50% upfront and 50% upon completion.</p>
-                      <p><strong className="text-[#1A2535] font-semibold">Late payment:</strong> Invoices not paid within 30 days of the due date may accrue interest at 1.5% per month. We reserve the right to suspend services for non-payment.</p>
+                      <p><strong className="text-[#1A2535] font-semibold">Purchases and subscriptions:</strong> Some of our products are paid, as one-time purchases or recurring subscriptions. Pricing and billing terms are presented at the point of purchase. Subscription fees are billed in advance and you authorize the applicable payment processor to charge your payment method.</p>
+                      <p><strong className="text-[#1A2535] font-semibold">App Store purchases:</strong> Products purchased through the Apple App Store are billed by Apple and subject to Apple&apos;s payment and refund policies.</p>
                       <p><strong className="text-[#1A2535] font-semibold">Taxes:</strong> All fees are exclusive of applicable taxes. You are responsible for all applicable taxes, excluding taxes on our net income.</p>
                     </div>
                   ),
@@ -79,8 +77,7 @@ export default function TermsPage() {
                   title: '4. Cancellation',
                   content: (
                     <div className="space-y-4 text-[#8A8070] leading-relaxed">
-                      <p>Monthly plans may be cancelled with 30 days written notice to <a href="mailto:hello@gravitasai.xyz" className="text-[#1A2535] font-medium hover:text-[#C49A2A] transition-colors">hello@gravitasai.xyz</a>. Your service will continue through the end of the paid period.</p>
-                      <p>Annual plans may be cancelled, but fees paid are non-refundable after the first 30 days from payment.</p>
+                      <p>Subscriptions may be cancelled at any time through the store or platform where you purchased them, or by writing to <a href="mailto:hello@gravitasai.xyz" className="text-[#1A2535] font-medium hover:text-[#C49A2A] transition-colors">hello@gravitasai.xyz</a>. Access continues through the end of the paid period.</p>
                       <p>We may terminate or suspend your access immediately if you violate these Terms, fail to pay fees when due, or engage in fraudulent or illegal activity.</p>
                     </div>
                   ),
@@ -89,10 +86,9 @@ export default function TermsPage() {
                   title: '5. Intellectual Property',
                   content: (
                     <div className="space-y-4 text-[#8A8070] leading-relaxed">
-                      <p><strong className="text-[#1A2535] font-semibold">Our IP:</strong> Gravitas AI owns all intellectual property rights in our platform, software, methodologies, processes, and documentation. Nothing in these Terms transfers any of our IP rights to you.</p>
-                      <p><strong className="text-[#1A2535] font-semibold">Your IP:</strong> You retain ownership of your business data, workflows, and any materials you provide to us. You grant us a limited license to use your materials solely to provide the services.</p>
-                      <p><strong className="text-[#1A2535] font-semibold">Deliverables:</strong> Custom deliverables created specifically for you under an SOW are owned by you upon full payment, unless otherwise specified in the SOW. General-purpose tools, templates, and methodologies remain our property.</p>
-                      <p><strong className="text-[#1A2535] font-semibold">OpenClaw:</strong> OpenClaw is a third-party AI orchestration platform that we deploy and configure as part of our services. Your use of OpenClaw is subject to its own license terms.</p>
+                      <p><strong className="text-[#1A2535] font-semibold">Our IP:</strong> Gravitas AI owns all intellectual property rights in our apps, software, and documentation. Purchasing or using a product grants you a license to use it, not ownership of it. Nothing in these Terms transfers any of our IP rights to you.</p>
+                      <p><strong className="text-[#1A2535] font-semibold">Your content:</strong> You retain ownership of any content you create with our apps, including dictated text, notes, and documents. We claim no rights to it.</p>
+                      <p><strong className="text-[#1A2535] font-semibold">Third-party components:</strong> Our products may include open-source and third-party components, which are subject to their own license terms.</p>
                     </div>
                   ),
                 },
@@ -170,7 +166,7 @@ export default function TermsPage() {
                   title: '12. Changes to Terms',
                   content: (
                     <p className="text-[#8A8070] leading-relaxed">
-                      We may update these Terms from time to time. We will notify you of material changes by posting the updated Terms on our website with a new effective date and, for significant changes, by email notification to active clients. Continued use of our services after the effective date constitutes acceptance of the updated Terms.
+                      We may update these Terms from time to time. We will notify you of material changes by posting the updated Terms on our website with a new effective date and, for significant changes, by email notification to users we have an email address for. Continued use of our services after the effective date constitutes acceptance of the updated Terms.
                     </p>
                   ),
                 },

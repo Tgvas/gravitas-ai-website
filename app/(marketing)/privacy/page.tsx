@@ -9,7 +9,7 @@ export const metadata: Metadata = createPageMetadata(
 );
 
 export default function PrivacyPage() {
-  const lastUpdated = 'January 1, 2026';
+  const lastUpdated = 'July 13, 2026';
 
   return (
     <>
@@ -37,10 +37,10 @@ export default function PrivacyPage() {
 
               <div>
                 <p className="text-[#8A8070] leading-relaxed text-lg mb-6">
-                  Gravitas AI LLC (&ldquo;Gravitas AI,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates gravitasai.xyz and provides AI operations services. This Privacy Policy explains how we collect, use, share, and protect information about you when you use our website or services.
+                  Gravitas AI LLC (&ldquo;Gravitas AI,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates gravitasai.xyz and builds software products, including the Rubber Duck app for macOS. This Privacy Policy explains how we collect, use, share, and protect information about you when you use our website or products.
                 </p>
                 <p className="text-[#8A8070] leading-relaxed">
-                  By using our website or engaging our services, you agree to the collection and use of information in accordance with this policy.
+                  By using our website or products, you agree to the collection and use of information in accordance with this policy.
                 </p>
               </div>
 
@@ -49,8 +49,8 @@ export default function PrivacyPage() {
                   title: '1. Information We Collect',
                   content: (
                     <div className="space-y-4 text-[#8A8070] leading-relaxed">
-                      <p><strong className="text-[#1A2535] font-semibold">Information you provide directly:</strong> When you contact us, submit a form, or engage our services, we may collect your name, email address, company name, job title, and any information you include in your messages or service requests.</p>
-                      <p><strong className="text-[#1A2535] font-semibold">Business and operational data:</strong> During service engagements, we may process business data, workflow information, and operational data necessary to provide our AI operations services. The scope of this data is defined in our service agreements.</p>
+                      <p><strong className="text-[#1A2535] font-semibold">Information you provide directly:</strong> When you contact us, submit a form, or join a waitlist, we may collect your name, email address, and any information you include in your messages.</p>
+                      <p><strong className="text-[#1A2535] font-semibold">Product data:</strong> Our apps are designed to be privacy-first. Rubber Duck transcribes speech entirely on-device, and your audio is not uploaded to us. Where an app offers optional AI features, the text is sent to the AI provider you choose and configure; we do not receive or store it. Each app documents its own data handling.</p>
                       <p><strong className="text-[#1A2535] font-semibold">Usage data:</strong> We automatically collect certain information when you visit our website, including IP address, browser type, pages visited, time spent on pages, and referring URLs. This data is collected through standard server logs and analytics tools.</p>
                       <p><strong className="text-[#1A2535] font-semibold">Cookies and tracking technologies:</strong> Our website may use cookies and similar technologies to improve functionality and analyze usage. You can control cookie settings through your browser settings.</p>
                     </div>
@@ -63,10 +63,10 @@ export default function PrivacyPage() {
                       <p>We use the information we collect to:</p>
                       <ul className="space-y-2 pl-4">
                         {[
-                          'Respond to inquiries and communicate about our services',
-                          'Provide, operate, and improve our AI operations services',
-                          'Process and fulfill service agreements',
-                          'Send service-related communications and updates',
+                          'Respond to inquiries and provide support for our apps',
+                          'Provide, operate, and improve our products',
+                          'Process purchases and subscriptions',
+                          'Send product-related communications and updates',
                           'Analyze website usage to improve user experience',
                           'Comply with legal obligations',
                           'Protect against fraud and security threats',
@@ -97,7 +97,7 @@ export default function PrivacyPage() {
                   title: '4. Data Retention',
                   content: (
                     <p className="text-[#8A8070] leading-relaxed">
-                      We retain personal information for as long as necessary to fulfill the purposes described in this policy, comply with legal obligations, resolve disputes, and enforce our agreements. When data is no longer needed, we securely delete or anonymize it. Business and operational data processed during service engagements is handled according to the terms of your service agreement.
+                      We retain personal information for as long as necessary to fulfill the purposes described in this policy, comply with legal obligations, resolve disputes, and enforce our agreements. When data is no longer needed, we securely delete or anonymize it.
                     </p>
                   ),
                 },
@@ -180,7 +180,7 @@ export default function PrivacyPage() {
                   title: '9. Changes to This Policy',
                   content: (
                     <p className="text-[#8A8070] leading-relaxed">
-                      We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy on this page with an updated date. For material changes, we will provide additional notice (such as email notification if you are a client). We encourage you to review this policy periodically.
+                      We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy on this page with an updated date. For material changes, we will provide additional notice (such as email notification if we have your email address). We encourage you to review this policy periodically.
                     </p>
                   ),
                 },

@@ -5,7 +5,7 @@ import { AnimatedSection } from '@/components/ui/AnimatedSection';
 
 export const metadata: Metadata = createPageMetadata(
   'Contact',
-  "Get in touch with Gravitas AI. Book a strategy call, ask about services, or reach us at hello@gravitasai.xyz. We respond within 1 business day.",
+  'Get in touch with Gravitas AI. App support, feedback, press, or partnerships. Reach us at hello@gravitasai.xyz. We respond within 1 business day.',
   '/contact'
 );
 
@@ -41,7 +41,7 @@ export default function ContactPage() {
               className="text-5xl lg:text-6xl font-bold text-[#F0EDE6] leading-tight"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              Let&apos;s Talk About Your AI Operations
+              We Read Every Message
             </h1>
           </AnimatedSection>
         </div>
@@ -89,7 +89,7 @@ export default function ContactPage() {
                       htmlFor="email"
                       className="block text-sm font-medium text-[#1A2535] mb-2"
                     >
-                      Work Email <span className="text-[#C49A2A]">*</span>
+                      Email <span className="text-[#C49A2A]">*</span>
                     </label>
                     <input
                       type="email"
@@ -123,20 +123,18 @@ export default function ContactPage() {
                     htmlFor="service"
                     className="block text-sm font-medium text-[#1A2535] mb-2"
                   >
-                    I&apos;m interested in
+                    This is about
                   </label>
                   <select
                     id="service"
                     name="service"
                     className="w-full border border-[#1A2535]/20 bg-white/60 px-4 py-3 text-[#1A2535] focus:outline-none focus:border-[#1A2535]/50 text-sm appearance-none"
                   >
-                    <option value="">Select a service...</option>
-                    <option value="strategy-call">Book a Strategy Call</option>
-                    <option value="ai-agents">AI Agent Setup</option>
-                    <option value="consulting">AI Consulting</option>
-                    <option value="pipelines">Automated Pipelines</option>
-                    <option value="openclaw">OpenClaw Configuration</option>
-                    <option value="platform">Platform Early Access</option>
+                    <option value="">Select a topic...</option>
+                    <option value="rubber-duck-support">Rubber Duck Support</option>
+                    <option value="feedback">Feedback & Feature Requests</option>
+                    <option value="press">Press & Media</option>
+                    <option value="partnership">Partnerships</option>
                     <option value="other">Other / Not Sure</option>
                   </select>
                 </div>
@@ -153,7 +151,7 @@ export default function ContactPage() {
                     name="body"
                     required
                     rows={5}
-                    placeholder="Tell us about your business and what you're trying to accomplish with AI..."
+                    placeholder="Tell us what's on your mind. Bug reports, feature ideas, questions, we want all of it..."
                     className="w-full border border-[#1A2535]/20 bg-white/60 px-4 py-3 text-[#1A2535] placeholder:text-[#8A8070] focus:outline-none focus:border-[#1A2535]/50 text-sm resize-none"
                   />
                 </div>
@@ -170,23 +168,23 @@ export default function ContactPage() {
             {/* Contact info */}
             <AnimatedSection delay={0.15}>
               <div className="space-y-8">
-                {/* Strategy call */}
+                {/* App support */}
                 <div className="border border-[#1A2535]/15 p-8">
                   <div className="w-6 h-px bg-[#C49A2A] mb-4" />
                   <h3
                     className="text-xl font-bold text-[#1A2535] mb-3"
                     style={{ fontFamily: 'var(--font-serif)' }}
                   >
-                    Book a Strategy Call
+                    Rubber Duck Support
                   </h3>
                   <p className="text-[#8A8070] leading-relaxed text-sm mb-6">
-                    The fastest way to get started. A 45 to 60 minute call where we map your operations, identify automation opportunities, and give you an honest assessment. No pitch deck required.
+                    Hit a bug or have a question about Rubber Duck? Email us with what you were doing and what happened, and it goes straight to the people who built the app.
                   </p>
                   <a
-                    href="mailto:hello@gravitasai.xyz?subject=Strategy Call Request"
+                    href="mailto:hello@gravitasai.xyz?subject=Rubber Duck Support"
                     className="inline-flex items-center justify-center bg-[#C49A2A] text-[#0D1B2A] font-semibold px-6 py-3 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
                   >
-                    Request a Call
+                    Email Support
                   </a>
                 </div>
 
@@ -206,14 +204,14 @@ export default function ContactPage() {
                     hello@gravitasai.xyz
                   </a>
                   <p className="text-[#8A8070] text-sm mt-3 leading-relaxed">
-                    We respond to every email within 1 business day. For urgent enterprise inquiries, mention it in the subject line.
+                    We respond to every email within 1 business day. For urgent issues, mention it in the subject line.
                   </p>
                 </div>
 
                 {/* Response time note */}
                 <div className="bg-[#0D1B2A]/5 border border-[#1A2535]/10 p-6">
                   <p className="text-[#1A2535] text-sm leading-relaxed">
-                    <strong className="font-semibold">Response time:</strong> We respond within 1 business day. Strategy calls are typically scheduled within 3 to 5 business days.
+                    <strong className="font-semibold">Response time:</strong> We respond within 1 business day. Bug reports for our apps get looked at first.
                   </p>
                 </div>
               </div>

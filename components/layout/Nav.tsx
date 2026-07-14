@@ -2,19 +2,11 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Menu, X, ChevronDown } from 'lucide-react'
-
-const services = [
-  { name: 'AI Agent Setup', href: '/services/ai-agents' },
-  { name: 'AI Consulting', href: '/services/ai-consulting' },
-  { name: 'Automated Pipelines', href: '/services/ai-automation' },
-  { name: 'AI Operations Platform', href: '/services/openclaw-setup' },
-]
+import { Menu, X } from 'lucide-react'
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [servicesOpen, setServicesOpen] = useState(false)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60)
@@ -63,66 +55,7 @@ export function Nav() {
 
             {/* Desktop nav */}
             <nav style={{ display: 'flex', alignItems: 'center', gap: '8px' }} className="desktop-nav">
-              {/* Services dropdown */}
-              <div
-                style={{ position: 'relative' }}
-                onMouseEnter={() => setServicesOpen(true)}
-                onMouseLeave={() => setServicesOpen(false)}
-              >
-                <button style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '4px',
-                  padding: '8px 12px',
-                  background: 'transparent',
-                  border: 'none',
-                  cursor: 'pointer',
-                  color: '#F0EDE6',
-                  fontFamily: 'var(--font-dm-sans)',
-                  fontSize: '14px',
-                  fontWeight: 500,
-                  letterSpacing: '0.02em',
-                  opacity: 0.85,
-                  transition: 'opacity 150ms',
-                }}>
-                  Services
-                  <ChevronDown size={14} style={{ transition: 'transform 150ms', transform: servicesOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} />
-                </button>
-                {servicesOpen && (
-                  <div style={{
-                    position: 'absolute',
-                    top: '100%',
-                    left: 0,
-                    background: '#0D1B2A',
-                    border: '1px solid rgba(196,154,42,0.2)',
-                    minWidth: '220px',
-                    padding: '8px 0',
-                  }}>
-                    {services.map((s) => (
-                      <Link
-                        key={s.href}
-                        href={s.href}
-                        style={{
-                          display: 'block',
-                          padding: '10px 20px',
-                          color: '#F0EDE6',
-                          fontFamily: 'var(--font-dm-sans)',
-                          fontSize: '14px',
-                          opacity: 0.8,
-                          transition: 'opacity 150ms',
-                          textDecoration: 'none',
-                        }}
-                        onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
-                        onMouseLeave={e => (e.currentTarget.style.opacity = '0.8')}
-                      >
-                        {s.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {(['Platform', 'About', 'Pricing'] as const).map((item) => (
+              {(['Apps', 'About', 'Contact'] as const).map((item) => (
                 <Link
                   key={item}
                   href={`/${item.toLowerCase()}`}
@@ -144,8 +77,10 @@ export function Nav() {
                 </Link>
               ))}
 
-              <Link
-                href="/contact"
+              <a
+                href="https://getrubberduck.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   marginLeft: '8px',
                   padding: '10px 20px',
@@ -168,8 +103,8 @@ export function Nav() {
                   e.currentTarget.style.transform = 'scale(1)'
                 }}
               >
-                Book a Strategy Call
-              </Link>
+                Get Rubber Duck
+              </a>
             </nav>
 
             {/* Mobile menu button */}
@@ -232,44 +167,10 @@ export function Nav() {
           </div>
 
           <nav style={{ display: 'flex', flexDirection: 'column', gap: '8px', flex: 1 }}>
-            <div style={{
-              fontSize: '11px',
-              fontFamily: 'var(--font-dm-sans)',
-              fontWeight: 600,
-              letterSpacing: '0.12em',
-              textTransform: 'uppercase',
-              color: '#C49A2A',
-              marginBottom: '8px',
-            }}>
-              Services
-            </div>
-            {services.map((s) => (
-              <Link
-                key={s.href}
-                href={s.href}
-                onClick={() => setMobileOpen(false)}
-                style={{
-                  padding: '12px 0',
-                  color: '#F0EDE6',
-                  fontFamily: 'var(--font-dm-sans)',
-                  fontSize: '18px',
-                  fontWeight: 400,
-                  borderBottom: '1px solid rgba(240,237,230,0.1)',
-                  textDecoration: 'none',
-                  minHeight: '44px',
-                  display: 'flex',
-                  alignItems: 'center',
-                }}
-              >
-                {s.name}
-              </Link>
-            ))}
-
-            <div style={{ marginTop: '16px' }}>
+            <div>
               {[
-                { label: 'Platform', href: '/platform' },
+                { label: 'Apps', href: '/apps' },
                 { label: 'About', href: '/about' },
-                { label: 'Pricing', href: '/pricing' },
                 { label: 'Contact', href: '/contact' },
               ].map((item) => (
                 <Link
@@ -295,8 +196,10 @@ export function Nav() {
             </div>
 
             <div style={{ marginTop: 'auto', paddingTop: '32px' }}>
-              <Link
-                href="/contact"
+              <a
+                href="https://getrubberduck.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileOpen(false)}
                 style={{
                   display: 'block',
@@ -311,8 +214,8 @@ export function Nav() {
                   minHeight: '44px',
                 }}
               >
-                Book a Strategy Call
-              </Link>
+                Get Rubber Duck
+              </a>
             </div>
           </nav>
         </div>
