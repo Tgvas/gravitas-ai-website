@@ -131,7 +131,7 @@ export default function ContactPage() {
                     className="w-full border border-[#1A2535]/20 bg-white/60 px-4 py-3 text-[#1A2535] focus:outline-none focus:border-[#1A2535]/50 text-sm appearance-none"
                   >
                     <option value="">Select a topic...</option>
-                    <option value="rubber-duck-support">Rubber Duck Support</option>
+                    <option value="ducktate-support">Ducktate Support</option>
                     <option value="feedback">Feedback & Feature Requests</option>
                     <option value="press">Press & Media</option>
                     <option value="partnership">Partnerships</option>
@@ -175,13 +175,13 @@ export default function ContactPage() {
                     className="text-xl font-bold text-[#1A2535] mb-3"
                     style={{ fontFamily: 'var(--font-serif)' }}
                   >
-                    Rubber Duck Support
+                    Ducktate Support
                   </h3>
                   <p className="text-[#8A8070] leading-relaxed text-sm mb-6">
-                    Hit a bug or have a question about Rubber Duck? Email us with what you were doing and what happened, and it goes straight to the people who built the app.
+                    Hit a bug or have a question about Ducktate? Email us with what you were doing and what happened, and it goes straight to the people who built the app.
                   </p>
                   <a
-                    href="mailto:hello@gravitasai.xyz?subject=Rubber Duck Support"
+                    href="mailto:hello@gravitasai.xyz?subject=Ducktate Support"
                     className="inline-flex items-center justify-center bg-[#C49A2A] text-[#0D1B2A] font-semibold px-6 py-3 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
                   >
                     Email Support

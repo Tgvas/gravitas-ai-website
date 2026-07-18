@@ -17,7 +17,7 @@ const capabilities = [
     title: 'Native Mac & iOS Apps',
     outcome: 'Apps that feel at home on Apple platforms.',
     description:
-      'We build with native frameworks, not wrappers. Fast launch, low memory, and interfaces that follow platform conventions instead of fighting them. Rubber Duck, our dictation app for Mac, is built this way.',
+      'We build with native frameworks, not wrappers. Fast launch, low memory, and interfaces that follow platform conventions instead of fighting them. Ducktate, our dictation app for Mac, is built this way.',
     flip: false,
     icon: (
       <div className="w-full aspect-[4/3] max-w-[400px]">
@@ -97,7 +97,7 @@ const orgSchema = {
   url: 'https://gravitasai.xyz',
   email: 'hello@gravitasai.xyz',
   description:
-    'Gravitas AI is a software studio that designs, builds, and ships SaaS products and native apps, including Rubber Duck, a dictation app for macOS.',
+    'Gravitas AI is a software studio that designs, builds, and ships SaaS products and native apps, including Ducktate, a dictation app for macOS.',
   areaServed: 'US',
 };
 
@@ -237,7 +237,7 @@ export default function HomePage() {
                   className="text-xl font-bold text-[#F0EDE6] mb-3"
                   style={{ fontFamily: 'var(--font-serif)' }}
                 >
-                  Rubber Duck
+                  Ducktate
                 </h3>
                 <p className="text-[#8A8070] leading-relaxed mb-6">
                   Push-to-talk dictation for Mac. On-device transcription, AI cleanup, and text typed straight into any app.
@@ -248,7 +248,7 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-medium text-[#F0EDE6] hover:text-[#C49A2A] transition-colors duration-200 group"
                 >
-                  getrubberduck.com
+                  Get Ducktate
                   <span className="ml-1 group-hover:translate-x-1 transition-transform duration-200">→</span>
                 </a>
               </div>

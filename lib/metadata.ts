@@ -25,7 +25,7 @@ export const baseMetadata: Metadata = {
     'SaaS products',
     'macOS apps',
     'native apps',
-    'Rubber Duck',
+    'Ducktate',
     'dictation app',
     'AI-powered apps',
   ],

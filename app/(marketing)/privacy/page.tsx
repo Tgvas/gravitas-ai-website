@@ -37,7 +37,7 @@ export default function PrivacyPage() {
 
               <div>
                 <p className="text-[#8A8070] leading-relaxed text-lg mb-6">
-                  Gravitas AI LLC (&ldquo;Gravitas AI,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates gravitasai.xyz and builds software products, including the Rubber Duck app for macOS. This Privacy Policy explains how we collect, use, share, and protect information about you when you use our website or products.
+                  Gravitas AI LLC (&ldquo;Gravitas AI,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates gravitasai.xyz and builds software products, including the Ducktate app for macOS. This Privacy Policy explains how we collect, use, share, and protect information about you when you use our website or products.
                 </p>
                 <p className="text-[#8A8070] leading-relaxed">
                   By using our website or products, you agree to the collection and use of information in accordance with this policy.
@@ -50,7 +50,7 @@ export default function PrivacyPage() {
                   content: (
                     <div className="space-y-4 text-[#8A8070] leading-relaxed">
                       <p><strong className="text-[#1A2535] font-semibold">Information you provide directly:</strong> When you contact us, submit a form, or join a waitlist, we may collect your name, email address, and any information you include in your messages.</p>
-                      <p><strong className="text-[#1A2535] font-semibold">Product data:</strong> Our apps are designed to be privacy-first. Rubber Duck transcribes speech entirely on-device, and your audio is not uploaded to us. Where an app offers optional AI features, the text is sent to the AI provider you choose and configure; we do not receive or store it. Each app documents its own data handling.</p>
+                      <p><strong className="text-[#1A2535] font-semibold">Product data:</strong> Our apps are designed to be privacy-first. Ducktate transcribes speech entirely on-device, and your audio is not uploaded to us. Where an app offers optional AI features, the text is sent to the AI provider you choose and configure; we do not receive or store it. Each app documents its own data handling.</p>
                       <p><strong className="text-[#1A2535] font-semibold">Usage data:</strong> We automatically collect certain information when you visit our website, including IP address, browser type, pages visited, time spent on pages, and referring URLs. This data is collected through standard server logs and analytics tools.</p>
                       <p><strong className="text-[#1A2535] font-semibold">Cookies and tracking technologies:</strong> Our website may use cookies and similar technologies to improve functionality and analyze usage. You can control cookie settings through your browser settings.</p>
                     </div>

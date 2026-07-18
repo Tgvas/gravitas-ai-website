@@ -49,7 +49,7 @@ export default function TermsPage() {
                   title: '1. Services',
                   content: (
                     <div className="space-y-4 text-[#8A8070] leading-relaxed">
-                      <p>Gravitas AI builds and distributes software products, including SaaS applications and native apps such as Rubber Duck for macOS. Individual products may have their own license terms or end-user license agreements, which apply in addition to these Terms.</p>
+                      <p>Gravitas AI builds and distributes software products, including SaaS applications and native apps such as Ducktate for macOS. Individual products may have their own license terms or end-user license agreements, which apply in addition to these Terms.</p>
                       <p>We reserve the right to modify, suspend, or discontinue any product or service at any time with reasonable notice. We will not be liable to you or any third party for any modification, suspension, or discontinuation.</p>
                     </div>
                   ),

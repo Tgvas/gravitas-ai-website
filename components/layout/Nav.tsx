@@ -103,7 +103,7 @@ export function Nav() {
                   e.currentTarget.style.transform = 'scale(1)'
                 }}
               >
-                Get Rubber Duck
+                Get Ducktate
               </a>
             </nav>
 
@@ -214,7 +214,7 @@ export function Nav() {
                   minHeight: '44px',
                 }}
               >
-                Get Rubber Duck
+                Get Ducktate
               </a>
             </div>
           </nav>

@@ -4,7 +4,7 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/ui/
 
 export const metadata: Metadata = createPageMetadata(
   'Our Apps',
-  'The apps we build at Gravitas AI, including Rubber Duck: push-to-talk dictation for Mac with on-device transcription and AI cleanup.',
+  'The apps we build at Gravitas AI, including Ducktate: push-to-talk dictation for Mac with on-device transcription and AI cleanup.',
   '/apps'
 );
 
@@ -22,7 +22,7 @@ const features = [
   {
     title: 'AI Cleanup',
     description:
-      'Raw speech is messy. Rubber Duck cleans up grammar, punctuation, and rambling before the text lands, so what you get reads like you wrote it.',
+      'Raw speech is messy. Ducktate cleans up grammar, punctuation, and rambling before the text lands, so what you get reads like you wrote it.',
   },
   {
     title: 'Types Into Any App',
@@ -44,7 +44,7 @@ const features = [
 const appSchema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'Rubber Duck',
+  name: 'Ducktate',
   operatingSystem: 'macOS',
   applicationCategory: 'UtilitiesApplication',
   url: 'https://getrubberduck.com',
@@ -80,13 +80,13 @@ export default function AppsPage() {
                 className="text-5xl lg:text-6xl font-bold text-[#F0EDE6] leading-tight mb-6"
                 style={{ fontFamily: 'var(--font-serif)' }}
               >
-                Rubber Duck
+                Ducktate
               </h1>
               <p className="text-xl text-[#8A8070] leading-relaxed mb-4">
                 Talk. It types. Push-to-talk dictation for Mac.
               </p>
               <p className="text-[#8A8070] leading-relaxed mb-10">
-                Hold a key, speak, release. Rubber Duck transcribes your speech entirely on-device, cleans it up with AI, and types the result into whatever app you are using. It is the fastest way to get thoughts out of your head and into text.
+                Hold a key, speak, release. Ducktate transcribes your speech entirely on-device, cleans it up with AI, and types the result into whatever app you are using. It is the fastest way to get thoughts out of your head and into text.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -95,7 +95,7 @@ export default function AppsPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center bg-[#C49A2A] text-[#0D1B2A] font-semibold px-8 py-4 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
                 >
-                  Visit getrubberduck.com
+                  Get Ducktate
                 </a>
                 <a
                   href="/contact"
@@ -223,7 +223,7 @@ export default function AppsPage() {
                 &ldquo;You think faster than you type. Your Mac should keep up.&rdquo;
               </blockquote>
               <p className="text-[#8A8070] leading-relaxed text-lg mb-10">
-                Rubber Duck started as a tool we built for ourselves and used every day. It became a product because it earned it. Every Gravitas AI app has to clear the same bar.
+                Ducktate started as a tool we built for ourselves and used every day. It became a product because it earned it. Every Gravitas AI app has to clear the same bar.
               </p>
               <a
                 href="https://getrubberduck.com"
@@ -231,7 +231,7 @@ export default function AppsPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-[#C49A2A] text-[#0D1B2A] font-semibold px-10 py-4 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
               >
-                Get Rubber Duck
+                Get Ducktate
               </a>
             </AnimatedSection>
           </div>

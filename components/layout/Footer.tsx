@@ -9,7 +9,7 @@ const footerLinks = {
   ],
   Apps: [
     { label: 'Our Apps', href: '/apps' },
-    { label: 'Rubber Duck', href: 'https://getrubberduck.com' },
+    { label: 'Ducktate', href: 'https://getrubberduck.com' },
   ],
   Legal: [
     { label: 'Privacy Policy', href: '/privacy' },

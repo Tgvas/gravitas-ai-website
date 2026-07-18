@@ -40,7 +40,7 @@ const orgSchema = {
   email: 'hello@gravitasai.xyz',
   foundingDate: '2026',
   description:
-    'Gravitas AI is a software studio that designs, builds, and ships SaaS products and native apps, including Rubber Duck, a dictation app for macOS.',
+    'Gravitas AI is a software studio that designs, builds, and ships SaaS products and native apps, including Ducktate, a dictation app for macOS.',
 };
 
 export default function AboutPage() {
@@ -99,7 +99,7 @@ export default function AboutPage() {
                   The studio exists to turn that experience into products of our own. Instead of consulting on other people&apos;s software, we design, build, and ship our own apps, and we hold them to the same standards an enterprise deployment would demand.
                 </p>
                 <p>
-                  Among those apps is Rubber Duck, a push-to-talk dictation app for Mac. It started as a tool we built for ourselves and used every day. More apps are on the way.
+                  Among those apps is Ducktate, a push-to-talk dictation app for Mac. It started as a tool we built for ourselves and used every day. More apps are on the way.
                 </p>
               </div>
             </AnimatedSection>
