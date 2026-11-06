@@ -7,9 +7,9 @@ const footerLinks = {
     { label: 'About', href: '/about' },
     { label: 'Contact', href: '/contact' },
   ],
-  Apps: [
-    { label: 'Our Apps', href: '/apps' },
-    { label: 'Ducktate', href: 'https://getrubberduck.com' },
+  Services: [
+    { label: 'Services', href: '/services' },
+    { label: 'Book a Call', href: '/contact' },
   ],
   Legal: [
     { label: 'Privacy Policy', href: '/privacy' },
@@ -58,7 +58,7 @@ export function Footer() {
                 color: 'rgba(240,237,230,0.6)',
                 maxWidth: '220px',
               }}>
-                An independent software studio building SaaS products and native apps.
+                Consulting and advisory for vibe coders and businesses. We help you build, scale, and secure your app.
               </p>
             </div>
           </div>

@@ -4,8 +4,8 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 
 export const metadata: Metadata = createPageMetadata(
-  'Contact',
-  'Get in touch with Gravitas AI. App support, feedback, press, or partnerships. Reach us at hello@gravitasai.xyz. We respond within 1 business day.',
+  'Book a Call',
+  'Book a call with Gravitas AI. Get help to build, scale, or secure your app, or ask about advisory and fractional CTO work. We respond within 1 business day.',
   '/contact'
 );
 
@@ -41,8 +41,11 @@ export default function ContactPage() {
               className="text-5xl lg:text-6xl font-bold text-[#F0EDE6] leading-tight"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              We Read Every Message
+              Book a Call
             </h1>
+            <p className="text-xl text-[#8A8070] leading-relaxed mt-6">
+              Tell us about your app or your idea. We reply within 1 business day with a clear next step.
+            </p>
           </AnimatedSection>
         </div>
       </section>
@@ -57,7 +60,7 @@ export default function ContactPage() {
                 className="text-2xl font-bold text-[#1A2535] mb-8"
                 style={{ fontFamily: 'var(--font-serif)' }}
               >
-                Send us a message
+                Tell us about your project
               </h2>
 
               {/* Note: Form is a placeholder — submit links to mailto */}
@@ -131,11 +134,11 @@ export default function ContactPage() {
                     className="w-full border border-[#1A2535]/20 bg-white/60 px-4 py-3 text-[#1A2535] focus:outline-none focus:border-[#1A2535]/50 text-sm appearance-none"
                   >
                     <option value="">Select a topic...</option>
-                    <option value="ducktate-support">Ducktate Support</option>
-                    <option value="feedback">Feedback & Feature Requests</option>
-                    <option value="press">Press & Media</option>
-                    <option value="partnership">Partnerships</option>
-                    <option value="other">Other / Not Sure</option>
+                    <option value="book-a-call">Book a Call / New Project</option>
+                    <option value="review-security">App Review or Security Audit</option>
+                    <option value="scaling">Scaling Help</option>
+                    <option value="advisory">Advisory / Fractional CTO</option>
+                    <option value="general">General</option>
                   </select>
                 </div>
 
@@ -151,7 +154,7 @@ export default function ContactPage() {
                     name="body"
                     required
                     rows={5}
-                    placeholder="Tell us what's on your mind. Bug reports, feature ideas, questions, we want all of it..."
+                    placeholder="What did you build, with which tools, and where does it hurt? Or what do you want to build?"
                     className="w-full border border-[#1A2535]/20 bg-white/60 px-4 py-3 text-[#1A2535] placeholder:text-[#8A8070] focus:outline-none focus:border-[#1A2535]/50 text-sm resize-none"
                   />
                 </div>
@@ -160,7 +163,7 @@ export default function ContactPage() {
                   type="submit"
                   className="w-full bg-[#C49A2A] text-[#0D1B2A] font-semibold px-8 py-4 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
                 >
-                  Send Message
+                  Book a Call
                 </button>
               </form>
             </AnimatedSection>
@@ -168,23 +171,23 @@ export default function ContactPage() {
             {/* Contact info */}
             <AnimatedSection delay={0.15}>
               <div className="space-y-8">
-                {/* App support */}
+                {/* Bring your app */}
                 <div className="border border-[#1A2535]/15 p-8">
                   <div className="w-6 h-px bg-[#C49A2A] mb-4" />
                   <h3
                     className="text-xl font-bold text-[#1A2535] mb-3"
                     style={{ fontFamily: 'var(--font-serif)' }}
                   >
-                    Ducktate Support
+                    Bring Your App
                   </h3>
                   <p className="text-[#8A8070] leading-relaxed text-sm mb-6">
-                    Hit a bug or have a question about Ducktate? Email us with what you were doing and what happened, and it goes straight to the people who built the app.
+                    Tell us what you built, which tools or stack you used, and where it hurts. An engineer reads it and replies with a clear next step.
                   </p>
                   <a
-                    href="mailto:hello@gravitasai.xyz?subject=Ducktate Support"
+                    href="mailto:hello@gravitasai.xyz?subject=Bring Your App"
                     className="inline-flex items-center justify-center bg-[#C49A2A] text-[#0D1B2A] font-semibold px-6 py-3 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
                   >
-                    Email Support
+                    Email Us Your App
                   </a>
                 </div>
 
@@ -211,7 +214,7 @@ export default function ContactPage() {
                 {/* Response time note */}
                 <div className="bg-[#0D1B2A]/5 border border-[#1A2535]/10 p-6">
                   <p className="text-[#1A2535] text-sm leading-relaxed">
-                    <strong className="font-semibold">Response time:</strong> We respond within 1 business day. Bug reports for our apps get looked at first.
+                    <strong className="font-semibold">Response time:</strong> We respond within 1 business day. Security concerns get looked at first.
                   </p>
                 </div>
               </div>
