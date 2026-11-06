@@ -6,7 +6,7 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Gravitas AI: Software Studio Building SaaS & Native Apps',
+    default: 'Gravitas AI: Consulting & Advisory to Build, Scale, and Secure Your App',
     template: '%s | Gravitas AI',
   },
   description: siteConfig.description,

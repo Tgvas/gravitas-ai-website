@@ -55,7 +55,7 @@ export function Nav() {
 
             {/* Desktop nav */}
             <nav style={{ display: 'flex', alignItems: 'center', gap: '8px' }} className="desktop-nav">
-              {(['Apps', 'About', 'Contact'] as const).map((item) => (
+              {(['Services', 'About', 'Contact'] as const).map((item) => (
                 <Link
                   key={item}
                   href={`/${item.toLowerCase()}`}
@@ -77,10 +77,8 @@ export function Nav() {
                 </Link>
               ))}
 
-              <a
-                href="https://getrubberduck.com"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
                 style={{
                   marginLeft: '8px',
                   padding: '10px 20px',
@@ -103,8 +101,8 @@ export function Nav() {
                   e.currentTarget.style.transform = 'scale(1)'
                 }}
               >
-                Get Ducktate
-              </a>
+                Book a Call
+              </Link>
             </nav>
 
             {/* Mobile menu button */}
@@ -169,7 +167,7 @@ export function Nav() {
           <nav style={{ display: 'flex', flexDirection: 'column', gap: '8px', flex: 1 }}>
             <div>
               {[
-                { label: 'Apps', href: '/apps' },
+                { label: 'Services', href: '/services' },
                 { label: 'About', href: '/about' },
                 { label: 'Contact', href: '/contact' },
               ].map((item) => (
@@ -196,10 +194,8 @@ export function Nav() {
             </div>
 
             <div style={{ marginTop: 'auto', paddingTop: '32px' }}>
-              <a
-                href="https://getrubberduck.com"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
                 onClick={() => setMobileOpen(false)}
                 style={{
                   display: 'block',
@@ -214,8 +210,8 @@ export function Nav() {
                   minHeight: '44px',
                 }}
               >
-                Get Ducktate
-              </a>
+                Book a Call
+              </Link>
             </div>
           </nav>
         </div>

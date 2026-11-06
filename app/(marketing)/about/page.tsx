@@ -4,30 +4,30 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/ui/
 
 export const metadata: Metadata = createPageMetadata(
   'About',
-  'Gravitas AI is an independent software studio. We design, build, and ship SaaS products and native apps in-house.',
+  'Gravitas AI is a consulting and advisory firm. We help vibe coders and businesses build, scale, and secure software made with AI. We also build our own products.',
   '/about'
 );
 
 const values = [
   {
-    title: 'Build What We Use',
+    title: 'Advice From Shipping',
     description:
-      'Every app starts as a tool we wanted for ourselves. If we would not use it every day, we do not ship it. Every product in our lineup earned its place that way.',
+      'We build and ship our own products. We give you the advice we use ourselves, not theory from the sidelines.',
   },
   {
     title: 'Engineering Rigor',
     description:
-      'Every product follows production engineering standards: tests first, staging before release, and monitoring after. We build things that last.',
+      'Production standards for every engagement: tests first, staging before release, and monitoring after. We help you build things that last.',
   },
   {
-    title: 'Privacy by Default',
+    title: 'Security by Default',
     description:
-      'We process data on-device wherever possible and draw clear boundaries everywhere else. Trust is a feature, and it is designed in from the first commit.',
+      'Auth, secrets, data access, and dependencies get checked early. Trust is a feature, and it is designed in from the start.',
   },
   {
-    title: 'Ship and Iterate',
+    title: 'Plain Talk',
     description:
-      'Real releases on real schedules. We ship, listen to the people using the app, and keep improving. An app is never finished, only better.',
+      'Clear findings, clear priorities, clear next steps. We tell you what is broken, what matters most, and what to fix first.',
   },
 ];
 
@@ -40,7 +40,7 @@ const orgSchema = {
   email: 'hello@gravitasai.xyz',
   foundingDate: '2026',
   description:
-    'Gravitas AI is a software studio that designs, builds, and ships SaaS products and native apps, including Ducktate, a dictation app for macOS.',
+    'Gravitas AI is a consulting and advisory firm that helps vibe coders and businesses build, scale, and secure software made with AI. Gravitas AI is also an independent software studio that builds its own products.',
 };
 
 export default function AboutPage() {
@@ -65,10 +65,10 @@ export default function AboutPage() {
               className="text-5xl lg:text-6xl font-bold text-[#F0EDE6] leading-tight mb-6"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              We Build Software Worth Keeping.
+              Software Worth Keeping Starts With Sound Engineering.
             </h1>
             <p className="text-xl text-[#8A8070] leading-relaxed">
-              Gravitas AI is an independent software studio. We design, build, and ship SaaS products and native apps in-house, with the engineering rigor of an enterprise team and the care of people who use what they make.
+              Gravitas AI is a consulting and advisory firm. We help vibe coders and businesses build, scale, and secure software made with AI, with the engineering rigor of an enterprise team. We are also an independent studio that builds its own products.
             </p>
           </AnimatedSection>
         </div>
@@ -89,17 +89,17 @@ export default function AboutPage() {
                 className="text-3xl font-bold text-[#1A2535] mb-6 leading-tight"
                 style={{ fontFamily: 'var(--font-serif)' }}
               >
-                Built from enterprise experience, pointed at products.
+                Enterprise experience, pointed at your app.
               </h2>
               <div className="space-y-4 text-[#8A8070] leading-relaxed">
                 <p>
                   Gravitas AI grew out of hands-on experience building software and AI systems in enterprise environments, where things have to hold up at scale under real business constraints.
                 </p>
                 <p>
-                  The studio exists to turn that experience into products of our own. Instead of consulting on other people&apos;s software, we design, build, and ship our own apps, and we hold them to the same standards an enterprise deployment would demand.
+                  Now we use that experience to help others. Vibe coders who built an app with tools like Cursor, Claude Code, Lovable, Bolt, or Replit come to us when it needs to scale, hold up under real users, and be secure. Businesses come to us to build software with AI the right way.
                 </p>
                 <p>
-                  Among those apps is Ducktate, a push-to-talk dictation app for Mac. It started as a tool we built for ourselves and used every day. More apps are on the way.
+                  We also run an independent studio and build our own products. That keeps our advice grounded in what it takes to ship and run software every day.
                 </p>
               </div>
             </AnimatedSection>
@@ -115,21 +115,21 @@ export default function AboutPage() {
                 className="text-3xl font-bold text-[#1A2535] mb-6 leading-tight"
                 style={{ fontFamily: 'var(--font-serif)' }}
               >
-                Ship apps people rely on every day.
+                Close the gap between demo and dependable.
               </h2>
               <div className="space-y-4 text-[#8A8070] leading-relaxed">
                 <p>
-                  Software is easy to start and hard to finish. The gap between a working demo and an app people trust with their daily work is wide, and most products fall into it.
+                  AI tools make software easy to start and hard to finish. The gap between a working demo and an app people trust with their daily work is wide, and most products fall into it.
                 </p>
                 <p>
-                  Our mission is to close that gap, one app at a time. Products that launch fast, respect your privacy, and get better with every release. Nothing shipped that we would not use ourselves.
+                  Our mission is to close that gap, one app at a time. We offer four services: Build, Grow &amp; Scale, Secure, and Advisory. Pick one or combine them.
                 </p>
               </div>
 
               <div className="mt-8 border border-[#1A2535]/15 p-6">
                 <div className="w-6 h-px bg-[#C49A2A] mb-4" />
                 <p className="text-[#1A2535] font-medium leading-relaxed italic" style={{ fontFamily: 'var(--font-serif)' }}>
-                  &ldquo;Every app we ship starts as a tool we wanted for ourselves. If we would not use it every day, we do not ship it.&rdquo;
+                  &ldquo;We give advice we would follow ourselves. If we would not ship it, we do not recommend it.&rdquo;
                 </p>
               </div>
             </AnimatedSection>
@@ -159,13 +159,13 @@ export default function AboutPage() {
             <AnimatedSection delay={0.15}>
               <div className="space-y-5 text-[#8A8070] leading-relaxed">
                 <p className="text-lg text-[#F0EDE6]">
-                  Gravitas AI is a US-based, engineer-run studio. No layers, no handoffs, no outsourcing.
+                  Gravitas AI is a US-based, engineer-run firm. No layers, no handoffs, no outsourcing.
                 </p>
                 <p>
-                  Our background spans the full engineering stack: from AI model selection and prompt engineering to distributed systems, API design, and production operations. That enterprise discipline goes into every product the studio ships.
+                  Our background spans the full engineering stack: from AI model selection and prompt engineering to distributed systems, API design, and production operations. That enterprise discipline goes into every engagement, from a code review to a fractional CTO role.
                 </p>
                 <p>
-                  We believe the best software respects its users: fast, private, and honest about what it does with your data. Gravitas AI exists to ship more of it.
+                  You work directly with the engineer doing the work. We believe the best software respects its users: fast, secure, and honest about what it does with their data.
                 </p>
               </div>
             </AnimatedSection>
@@ -187,7 +187,7 @@ export default function AboutPage() {
               className="text-4xl font-bold text-[#1A2535] leading-tight"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              The principles behind every app we ship.
+              The principles behind every engagement.
             </h2>
           </AnimatedSection>
 
@@ -218,16 +218,16 @@ export default function AboutPage() {
               className="text-3xl lg:text-4xl font-bold text-[#F0EDE6] mb-6"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              See what we build.
+              Ready to make your app dependable?
             </h2>
             <p className="text-[#8A8070] mb-8 max-w-xl mx-auto leading-relaxed">
-              Our apps are the fastest way to see what we mean by software worth keeping.
+              Tell us what you built and where it hurts. We reply with a clear next step.
             </p>
             <a
-              href="/apps"
+              href="/contact"
               className="inline-flex items-center justify-center bg-[#C49A2A] text-[#0D1B2A] font-semibold px-10 py-4 hover:bg-[#A07820] transition-colors duration-200 tracking-wide text-sm"
             >
-              See Our Apps
+              Book a Call
             </a>
           </AnimatedSection>
         </div>
